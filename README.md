@@ -1,4 +1,4 @@
 # Testdocumentation 1
 
-[hier](https://thgiesecke.github.io/Testdocumentation/)
+[hier](https://CGS-TGi.github.io/Testdocumentation/)
 
