@@ -14,7 +14,8 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
-<!--include:parts/part1.md-->
+{include} parts/part1.md
+
 
 #### Anwendungsbeschreibung 4
 
