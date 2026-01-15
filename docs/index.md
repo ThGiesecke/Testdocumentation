@@ -21,7 +21,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 ![The San Juan Mountains are beautiful](/images/Abbildung-1-1.jpg "San Juan Mountains")
 
 ### Anwendungsbeschreibung 3
-### Anwendungsbeschreibung 3(#Anwendungsbeschreibung 3)
+### [Anwendungsbeschreibung 3] (#Anwendungsbeschreibung 3)
 
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
@@ -29,6 +29,6 @@ Text 3
 
 
 #### Anwendungsbeschreibung 4
-#### Anwendungsbeschreibung 4(#Anwendungsbeschreibung 4)
+#### [Anwendungsbeschreibung 4] (#Anwendungsbeschreibung 4)
 
 Text 4
