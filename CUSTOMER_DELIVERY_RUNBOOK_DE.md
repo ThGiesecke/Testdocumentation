@@ -40,8 +40,6 @@ Weitere projektspezifische Dokumente (z. B. Architekturskizzen, Freigabeprotokol
 
 **Wichtige Referenzdokumente im Repository (Auswahl):**
 
-[oben](#inhaltsverzeichnis)
-
 ## 1. Überblick und Rollen
 
   - Ticketsystem / E-Mail-Verteiler für technische Themen
@@ -123,19 +121,6 @@ Die AI Audit Assist Plattform unterstützt verschiedene Betriebsmodelle:
 - `documentation/deployment/Azure-Deployment-Customer.md` – Leitfaden für Deployment auf einem Cloud-Server beim Kunden
 - `docs/README.md` – Abschnitt „Deployment Overview“, „Production Considerations“
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 3. Vorbereitung beim Kunden
 
 ### 3.1 Organisatorische Voraussetzungen
@@ -167,41 +152,39 @@ Die AI Audit Assist Plattform unterstützt verschiedene Betriebsmodelle:
 
 ### 4.1 SaaS / CGS-gehostete Variante
 
+**Kundenseitige Schritte**
 - interne Kommunikation an Nutzer und Fachbereiche
 - SSO-Integration (z. B. Azure AD/Entra) nach gemeinsam abgestimmter Konfiguration
 - Freigabe von Netzverbindungen zu den CGS-Endpunkten
-**Kundenseitige Schritte**
 
+**CGS-seitige Schritte (High Level)**
 - Konfiguration von Authentifizierung, Logging, Monitoring, Backup
 - Anlegen von Tenants/Instanzen für den Kunden
 - Provisionierung der Plattform in der Ziel-Cloud
-**CGS-seitige Schritte (High Level)**
 
 ### 4.2 Kunden-VM / Docker Compose
 
+**Typischer Ablauf**
   - Verweis auf `documentation/deployment/Deployment-Anleitung.html` (kundengerechte Schritt-für-Schritt-Anleitung)
   - Verweis auf `documentation/deployment/Azure-Deployment-Customer.md`
   - Start des Deployments gemäß Anleitung:
   - Konfiguration kundenindividueller Parameter (URLs, Secrets, Datenbankanbindung, Logging-Ziele etc.)
   - Übermittlung der `docker-compose.yaml` und zugehöriger Konfigurationsdateien (`.env`, `config.yaml`) an den Kunden
   
- **Typischer Ablauf**
-
+**Voraussetzungen**
  - Installierter Docker-Engine und Docker Compose
  - Bereitgestellte VM/Server mit unterstütztem OS (siehe IT-Requirements)
- 
-**Voraussetzungen**
 
 ### 4.3 Kundeneigenes Kubernetes-Cluster
 
-- Detaillierte Kubernetes-Guides können in separaten Dokumenten gepflegt werden und von diesem Runbook referenziert werden.
 **Hinweis**
+- Detaillierte Kubernetes-Guides können in separaten Dokumenten gepflegt werden und von diesem Runbook referenziert werden.
 
+**High-Level-Schritte**
 - Deployment der Applikations-Services in den Cluster
 - Anlegen der benötigten Secrets, ConfigMaps und Persistenzkonfiguration (PVCs)
 - Vorbereitung von Ingress, Load Balancern und TLS-Zertifikaten
 - Definition des Ziel-Namespaces und der Ressourcenzuordnung
-**High-Level-Schritte**
 
 Spezifische Hybrid-Architekturen werden projektspezifisch dokumentiert.
 
@@ -221,14 +204,14 @@ Spezifische Hybrid-Architekturen werden projektspezifisch dokumentiert.
 
 ### 5.2 Durchführung des Test-Deployments
 
+**Schritte (Beispiele)**
 - Durchführung von End-to-End Tests mit ausgewählten Pilotnutzern
 - Einspielen eines initialen Test-Datenbestands (Dokumente, Konfigurationen)
 - Basis-Health-Checks (HTTP-Health-Endpoints, Status der Container/Pods)
 - Deployment der Services (Docker Compose / Kubernetes) in der Testumgebung
-**Schritte (Beispiele)**
 
-- `DEPLOYMENT_GUIDE.md` / `CUSTOMER_DEPLOYMENT_PROCESS.md` (sofern im Projekt als technische Detailanleitungen genutzt)
 **Verweise**
+- `DEPLOYMENT_GUIDE.md` / `CUSTOMER_DEPLOYMENT_PROCESS.md` (sofern im Projekt als technische Detailanleitungen genutzt)
 
 ### 5.3 Testprotokoll und Abnahme
 
@@ -250,12 +233,14 @@ Vor dem finalen Go-Live sollten u. a. folgende Punkte erfüllt sein:
 
 ### 6.2 Umschaltstrategie
 
+**Variante 1: Getrennte Test- und Produktionsumgebung**
   - Bereinigung von Testdaten, sofern erforderlich
   - Anpassung von Konfigurationen (z. B. Daten, Nutzer, Logging)
-- **Variante 2: Test-Umgebung wird zur Produktion**
+  
+**Variante 2: Test-Umgebung wird zur Produktion**
   - Getrennte URLs/Endpunkte
   - Reproduktions-Deployment in Produktivumgebung nach erfolgreichem Test
-- **Variante 1: Getrennte Test- und Produktionsumgebung**
+
 
 ### 6.3 Hypercare-Phase
 
@@ -290,23 +275,19 @@ Vor dem finalen Go-Live sollten u. a. folgende Punkte erfüllt sein:
 
 Diese FAQ kann je Kunde und Projekt um spezifische Fragen/Antworten erweitert werden.
 
-- **Antwort:** Für schwerwiegende Störungen wird ein definiertes Incident-Management genutzt (z. B. Eskalationspfad, definierte Reaktionszeiten). Die genaue Ausgestaltung erfolgt im Rahmen der vertraglichen Vereinbarungen und SLAs.
+| Frage | Antwort | 
+| ------- | ----- | 
+| Was passiert bei schwerwiegenden Incidents? | Für schwerwiegende Störungen wird ein definiertes Incident-Management genutzt (z. B. Eskalationspfad, 
+definierte Reaktionszeiten). Die genaue Ausgestaltung erfolgt im Rahmen der vertraglichen Vereinbarungen und SLAs. | 
+| Wie läuft ein Update ab |  Updates werden im Vorfeld angekündigt und mit dem Kunden abgestimmt. Je nach Betriebsmodell werden neue Container-Images bereitgestellt und in einem 
+vereinbarten Wartungsfenster ausgerollt. Kritische Sicherheitsupdates können nach Absprache kurzfristig erfolgen. |
+|Können wir unsere eigenen Security-Tools (VPN, Proxy, IDS/IPS) nutzen?| Ja, in der Regel werden vorhandene Kundensicherheitsmechanismen integriert. 
+Wichtig ist eine frühzeitige Abstimmung zu Firewall-/Proxy-Regeln und ggf. SSL-Inspection, 
+um die Funktionalität (z. B. Verbindung zu externen LLM-APIs oder Container-Registy) sicherzustellen. |
+| Wer ist für den laufenden Betrieb verantwortlich?|Das hängt vom gewählten Betriebsmodell ab. Bei SaaS/Managed Service liegt der technische Betrieb überwiegend bei CGS, 
+beim On-Prem-/Kundenbetrieb ist der Kunde für Infrastruktur, OS, Docker/Kubernetes verantwortlich; 
+CGS unterstützt bei Applikationsupdates und -konfiguration. Details siehe Verantwortlichkeitsübersicht in den IT-Requirements.|
+|Wie lange dauert eine Standard-Auslieferung?|  Für einen typischen Pilotbetrieb (PoC) sollten – bei verfügbarer Infrastruktur und schnellen Freigaben – 
+ca. 2–6 Wochen eingeplant werden. Der Übergang in den Produktionsbetrieb hängt stark von internen Prozessen beim Kunden (Change-Management, Security-Reviews) ab.|
 
-**Frage:** Was passiert bei schwerwiegenden Incidents?
-
-- **Antwort:** Updates werden im Vorfeld angekündigt und mit dem Kunden abgestimmt. Je nach Betriebsmodell werden neue Container-Images bereitgestellt und in einem vereinbarten Wartungsfenster ausgerollt. Kritische Sicherheitsupdates können nach Absprache kurzfristig erfolgen.
-
-**Frage:** Wie läuft ein Update ab?
-
-- **Antwort:** Ja, in der Regel werden vorhandene Kundensicherheitsmechanismen integriert. Wichtig ist eine frühzeitige Abstimmung zu Firewall-/Proxy-Regeln und ggf. SSL-Inspection, um die Funktionalität (z. B. Verbindung zu externen LLM-APIs oder Container-Registy) sicherzustellen.
-
-**Frage:** Können wir unsere eigenen Security-Tools (VPN, Proxy, IDS/IPS) nutzen?
-
-- **Antwort:** Das hängt vom gewählten Betriebsmodell ab. Bei SaaS/Managed Service liegt der technische Betrieb überwiegend bei CGS, beim On-Prem-/Kundenbetrieb ist der Kunde für Infrastruktur, OS, Docker/Kubernetes verantwortlich; CGS unterstützt bei Applikationsupdates und -konfiguration. Details siehe Verantwortlichkeitsübersicht in den IT-Requirements.
-
-**Frage:** Wer ist für den laufenden Betrieb verantwortlich?
-
-- **Antwort:** Für einen typischen Pilotbetrieb (PoC) sollten – bei verfügbarer Infrastruktur und schnellen Freigaben – ca. 2–6 Wochen eingeplant werden. Der Übergang in den Produktionsbetrieb hängt stark von internen Prozessen beim Kunden (Change-Management, Security-Reviews) ab.
-
-**Frage:** Wie lange dauert eine Standard-Auslieferung?
 
