@@ -29,15 +29,13 @@ Dieses Dokument beschreibt den typischen Ablauf, wie die AI Audit Assist Plattfo
 - 7.1 [Betriebsübergabe an Kunden-IT](#71-betriebsübergabe-an-kunden-it)
 - 8 [Anhänge und Verweise](#8-anhänge-und-verweise)
 
-Weitere projektspezifische Dokumente (z. B. Architekturskizzen, Freigabeprotokolle) können an dieser Stelle ergänzt oder verlinkt werden.
+**Weitere projektspezifische Dokumente (z. B. Architekturskizzen, Freigabeprotokolle):**
 - `docs/INDEX.md` – Index über weitere technische Dokumente und Tasks
 - `docs/README.md` – Gesamtüberblick (Deployment Overview, Production Considerations, Monitoring, Backup)
 - `documentation/deployment/Deployment-Anleitung.html` – Schritt-für-Schritt-Anleitung für Kunden
 - `documentation/deployment/Azure-Deployment-Customer.md` – Detailleitfaden für Deployment auf Cloud-Server beim Kunden
 - `CUSTOMER_DEPLOYMENT_PROCESS.md` – Bestehende Prozessbeschreibung, interne Sicht
 - `DEPLOYMENT_GUIDE.md` – Technische Details des Deployments (sofern vorhanden)
-
-**Wichtige Referenzdokumente im Repository (Auswahl):**
 - `IT_REQUIREMENTS_AI_AUDIT_ASSIST_DE_EN.md` - technischen Voraussetzungen für die Bereitstellung und den Betrieb
 - `technical_requirements/CGS-Assist-Bereitstellung.docx` - CGS Assist technische Bereitstellungsanforderungen
 - `COLLECTION_FAQ.md` - Sammlung häufig gestelleter Fragen in allen Bereichen des Projektes (z.B. Auslieferung, Bereitstellung, Service)

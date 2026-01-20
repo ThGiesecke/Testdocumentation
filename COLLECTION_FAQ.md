@@ -1,7 +1,7 @@
 ## Sammlung häufig gestellter Fragen
 
 Dieses Dokument ist zur Sammlung häufig gestellter Fragen in allen Bereichen des Projektes (z.B. Auslieferung, Bereitstellung)
-Diese FAQ kann je Kunde und Projekt um spezifische Fragen/Antworten erweitert werden.
+Diese FAQ Liste kann je Kunde und Projekt um spezifische Fragen/Antworten erweitert werden.
 
 
 |  Frage  | Antwort | 
