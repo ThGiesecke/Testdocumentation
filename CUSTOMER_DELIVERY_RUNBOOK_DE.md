@@ -29,7 +29,6 @@ Dieses Dokument beschreibt den typischen Ablauf, wie die AI Audit Assist Plattfo
 - 8. [Anhänge und Verweise](#8-anhänge-und-verweise)
 - 9. [FAQ – Häufige Fragen zur Auslieferung](#9-faq-häufige-fragen-zur-auslieferung)
 
-
 Weitere projektspezifische Dokumente (z. B. Architekturskizzen, Freigabeprotokolle) können an dieser Stelle ergänzt oder verlinkt werden.
 
 - `docs/INDEX.md` – Index über weitere technische Dokumente und Tasks
