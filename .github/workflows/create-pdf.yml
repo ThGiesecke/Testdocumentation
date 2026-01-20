@@ -1,4 +1,4 @@
-name: Docs to PDF
+name: Manual de to PDF
 
 on:
   workflow_dispatch:
