@@ -3,31 +3,31 @@
 Dieses Dokument beschreibt den typischen Ablauf, wie die AI Audit Assist Plattform bei einem Kunden eingeführt und technisch ausgerollt wird – von der ersten Anfrage bis zur Übergabe in den Regelbetrieb. Es richtet sich an Vertrieb/Pre-Sales, Projektleitung, technische Ansprechpartner beim Kunden sowie DevOps/Operations.
 
 ### Inhaltsverzeichnis
-- 1. [Überblick und Rollen](#1-überblick-und-rollen)
-- 2. [Phasenmodell der Auslieferung](#2-phasenmodell-der-auslieferung)
+- 1 [Überblick und Rollen](#1-überblick-und-rollen)
+- 2 [Phasenmodell der Auslieferung](#2-phasenmodell-der-auslieferung)
 - 2.1 [Pre-Sales und Anforderungsaufnahme](#21-pre-sales-und-anforderungsaufnahme)
 - 2.2 [Technische Klärung und Architektur-Workshop](#22-technische-klärung-und-architektur-workshop)
-- 3. [Vorbereitung beim Kunden](#3-vorbereitung-beim-kunden)
+- 3 [Vorbereitung beim Kunden](#3-vorbereitung-beim-kunden)
 - 3.1 [Organisatorische Voraussetzungen](#31-organisatorische-voraussetzungen)
 - 3.2 [Technische Voraussetzungen und IT-Requirements](#32-technische-voraussetzungen-und-it-requirements)
 - 3.3 [Lizenzierung und Zugriff auf Images](#33-lizenzierung-und-zugriff-auf-images)
-- 4. [Deployment-Vorbereitung je Betriebsmodell](#4-deployment-vorbereitung-je-betriebsmodell)
+- 4 [Deployment-Vorbereitung je Betriebsmodell](#4-deployment-vorbereitung-je-betriebsmodell)
 - 4.1 [SaaS / CGS-gehostete Variante](#41-saas-cgs-gehostete-variante)
 - 4.2 [Kunden-VM / Docker Compose](#42-Kunden-vm-docker-compose)
 - 4.3 [Kundeneigenes Kubernetes-Cluster](43-kundeneigenes-kubernetes-cluster)
-- 4.4 [Hybride Szenarien](#44-hybride szenarien)
-- 5. [Test-Deployment (Pilot / Staging)](#5-test-deployment-pilot-staging)
+- 4.4 [Hybride Szenarien](#44-hybride-szenarien)
+- 5 [Test-Deployment (Pilot / Staging)](#5-test-deployment-pilot-staging)
 - 5.1 [Zielsetzung des Test-Deployments](#51-zielsetzung-des-test-deployments)
 - 5.2 [Durchführung des Test-Deployments](#52-durchführung-des-test-deployments)
 - 5.3 [Testprotokoll und Abnahme](#53-testprotokoll-und-abnahme)
-- 6. [Go-Live](#6-go-live)
+- 6 [Go-Live](#6-go-live)
 - 6.1 [Go-Live-Checkliste](#61-go-live-checkliste)
 - 6.2 [Umschaltstrategie](#62-umschaltstrategie)
 - 6.3 [Hypercare-Phase](#63-hypercare-phase)
-- 7. [Übergabe in den Regelbetrieb](#7-übergabe-in-den-regelbetrieb)
+- 7 [Übergabe in den Regelbetrieb](#7-übergabe-in-den-regelbetrieb)
 - 7.1 [Betriebsübergabe an Kunden-IT](#71-betriebsübergabe-an-kunden-it)
-- 8. [Anhänge und Verweise](#8-anhänge-und-verweise)
-- 9. [FAQ – Häufige Fragen zur Auslieferung](#9-faq-häufige-fragen-zur-auslieferung)
+- 8 [Anhänge und Verweise](#8-anhänge-und-verweise)
+- 9 [FAQ – Häufige Fragen zur Auslieferung](#9-faq-häufige-fragen-zur-auslieferung)
 
 Weitere projektspezifische Dokumente (z. B. Architekturskizzen, Freigabeprotokolle) können an dieser Stelle ergänzt oder verlinkt werden.
 
@@ -40,8 +40,8 @@ Weitere projektspezifische Dokumente (z. B. Architekturskizzen, Freigabeprotokol
 
 **Wichtige Referenzdokumente im Repository (Auswahl):**
 
+[oben](#inhaltsverzeichnis)
 
---------------------------------------------------
 ## 1. Überblick und Rollen
 
   - Ticketsystem / E-Mail-Verteiler für technische Themen
