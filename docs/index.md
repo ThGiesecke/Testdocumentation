@@ -30,18 +30,6 @@ Text 3
 
 Text 4
 
-<!-- Inhaltsverzeichnis -->
-- [Thema1](#Thema1)
-- [Thema2](#Thema2)
-- [Thema3](#Thema3)
 
-## Thema1
-<!-- Inhalt zu Thema1 -->
-
-## Thema2
-<!-- Inhalt zu Thema2 -->
-
-## Thema3
-<!-- Inhalt zu Thema3 -->
 
 
