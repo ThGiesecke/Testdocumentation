@@ -2,7 +2,7 @@
 
 This document is for collecting frequently asked questions covering all areas of the project (e.g., delivery, provisioning). This FAQ list can be extended for each customer and project with specific questions/answers.
 
-|  <div style="width: 40%;">Question</div>|	Answer|
+| Question|	Answer|
 |----|----|
 |What happens in case of serious incidents?|	A defined incident management process is used for serious disruptions (e.g., escalation path, defined response times). The exact structure is defined in the contractual agreements and SLAs.|
 |How does an update work?|	Updates are announced beforehand and coordinated with the customer. Depending on the operating model, new container images are provided and rolled out during a scheduled maintenance window. Critical security updates may take place at short notice after consultation.|
