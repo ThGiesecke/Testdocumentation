@@ -28,10 +28,8 @@ Dieses Dokument beschreibt den typischen Ablauf, wie die AI Audit Assist Plattfo
 - 7 [Übergabe in den Regelbetrieb](#7-übergabe-in-den-regelbetrieb)
 - 7.1 [Betriebsübergabe an Kunden-IT](#71-betriebsübergabe-an-kunden-it)
 - 8 [Anhänge und Verweise](#8-anhänge-und-verweise)
-- 9 [FAQ – Häufige Fragen zur Auslieferung](#9--faq-häufige-fragen-zur-auslieferung)
 
 Weitere projektspezifische Dokumente (z. B. Architekturskizzen, Freigabeprotokolle) können an dieser Stelle ergänzt oder verlinkt werden.
-
 - `docs/INDEX.md` – Index über weitere technische Dokumente und Tasks
 - `docs/README.md` – Gesamtüberblick (Deployment Overview, Production Considerations, Monitoring, Backup)
 - `documentation/deployment/Deployment-Anleitung.html` – Schritt-für-Schritt-Anleitung für Kunden
@@ -40,6 +38,8 @@ Weitere projektspezifische Dokumente (z. B. Architekturskizzen, Freigabeprotokol
 - `DEPLOYMENT_GUIDE.md` – Technische Details des Deployments (sofern vorhanden)
 
 **Wichtige Referenzdokumente im Repository (Auswahl):**
+- `IT_REQUIREMENTS_AI_AUDIT_ASSIST_DE_EN.md` - technischen Voraussetzungen für die Bereitstellung und den Betrieb
+- `technical_requirements/CGS-Assist-Bereitstellung.docx` - CGS Assist technische Bereitstellungsanforderungen
 
 ## 1. Überblick und Rollen
 
@@ -272,16 +272,5 @@ Vor dem finalen Go-Live sollten u. a. folgende Punkte erfüllt sein:
 - Planung zusätzlicher Use-Cases und Integrationen
 - Regelmäßige Review-Termine (z. B. quartalsweise) zur Bewertung der Nutzung
 
-## 9. FAQ – Häufige Fragen zur Auslieferung
-
-Diese FAQ kann je Kunde und Projekt um spezifische Fragen/Antworten erweitert werden.
-
-| Frage | Antwort | 
-| ------- | ----- | 
-| Was passiert bei schwerwiegenden Incidents? | Für schwerwiegende Störungen wird ein definiertes Incident-Management genutzt (z. B. Eskalationspfad, definierte Reaktionszeiten). Die genaue Ausgestaltung erfolgt im Rahmen der vertraglichen Vereinbarungen und SLAs. | 
-| Wie läuft ein Update ab |  Updates werden im Vorfeld angekündigt und mit dem Kunden abgestimmt. Je nach Betriebsmodell werden neue Container-Images bereitgestellt und in einem vereinbarten Wartungsfenster ausgerollt. Kritische Sicherheitsupdates können nach Absprache kurzfristig erfolgen. |
-|Können wir unsere eigenen Security-Tools (VPN, Proxy, IDS/IPS) nutzen?| Ja, in der Regel werden vorhandene Kundensicherheitsmechanismen integriert. Wichtig ist eine frühzeitige Abstimmung zu Firewall-/Proxy-Regeln und ggf. SSL-Inspection, um die Funktionalität (z. B. Verbindung zu externen LLM-APIs oder Container-Registy) sicherzustellen. |
-| Wer ist für den laufenden Betrieb verantwortlich?|Das hängt vom gewählten Betriebsmodell ab. Bei SaaS/Managed Service liegt der technische Betrieb überwiegend bei CGS, beim On-Prem-/Kundenbetrieb ist der Kunde für Infrastruktur, OS, Docker/Kubernetes verantwortlich; CGS unterstützt bei Applikationsupdates und -konfiguration. Details siehe Verantwortlichkeitsübersicht in den IT-Requirements.|
-|Wie lange dauert eine Standard-Auslieferung?|  Für einen typischen Pilotbetrieb (PoC) sollten – bei verfügbarer Infrastruktur und schnellen Freigaben – ca. 2–6 Wochen eingeplant werden. Der Übergang in den Produktionsbetrieb hängt stark von internen Prozessen beim Kunden (Change-Management, Security-Reviews) ab.|
 
 
