@@ -2,7 +2,7 @@
 
 This document is for collecting frequently asked questions covering all areas of the project (e.g., delivery, provisioning). This FAQ list can be extended for each customer and project with specific questions/answers.
 
-| Question|	Answer|
+|  <div style="width: 40%;">Question</div>|	Answer|
 |----|----|
 |What happens in case of serious incidents?|	A defined incident management process is used for serious disruptions (e.g., escalation path, defined response times). The exact structure is defined in the contractual agreements and SLAs.|
 |How does an update work?|	Updates are announced beforehand and coordinated with the customer. Depending on the operating model, new container images are provided and rolled out during a scheduled maintenance window. Critical security updates may take place at short notice after consultation.|
@@ -28,9 +28,9 @@ This document is for collecting frequently asked questions covering all areas of
 |	|Azure OpenAI: $100–500/month (50 users)|
 |	|AWS Bedrock: $80–400/month (50 users)|
 |	|Local: €0 API fees, but hardware investment required|
-|How is authentication handled?	Via local user/password management (customer’s LDAP, customer’s database)|
+|How is authentication handled?|	Via local user/password management (customer’s LDAP, customer’s database)|
 |	|Via Microsoft Entra ID (formerly Azure AD/Entra) (OIDC/SAML)|
 |	|API token for integrations|
-|How is access secured?	Security via certificates (TLS/HTTPS)|
+|How is access secured?|	Security via certificates (TLS/HTTPS)|
 |	|Let’s Encrypt (via Caddy)|
 |	|Own certificates (internal CA)|

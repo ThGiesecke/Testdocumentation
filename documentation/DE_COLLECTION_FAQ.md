@@ -4,7 +4,7 @@ Dieses Dokument ist zur Sammlung häufig gestellter Fragen in allen Bereichen de
 Diese FAQ Liste kann je Kunde und Projekt um spezifische Fragen/Antworten erweitert werden.
 
 
-|  Frage  | Antwort | 
+|  <div style="width: 40%;">Frage</div>  | Antwort | 
 | ------- | ------- | 
 |Was passiert bei schwerwiegenden Incidents? | Für schwerwiegende Störungen wird ein definiertes Incident-Management genutzt (z. B. Eskalationspfad, definierte Reaktionszeiten). Die genaue Ausgestaltung erfolgt im Rahmen der vertraglichen Vereinbarungen und SLAs. | 
 |Wie läuft ein Update ab |  Updates werden im Vorfeld angekündigt und mit dem Kunden abgestimmt. Je nach Betriebsmodell werden neue Container-Images bereitgestellt und in einem vereinbarten Wartungsfenster ausgerollt. Kritische Sicherheitsupdates können nach Absprache kurzfristig erfolgen. |
