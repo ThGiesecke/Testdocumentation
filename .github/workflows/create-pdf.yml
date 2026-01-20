@@ -30,7 +30,7 @@ jobs:
 
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: documentation/**
+          input_dir: documentation/user_manuals/de/docs
           output_dir: pdfs
           images_dir: documentation/user_manuals/de/docs/images
           # theme: styles/mytheme.css
