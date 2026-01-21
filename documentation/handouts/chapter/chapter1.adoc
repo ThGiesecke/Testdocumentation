@@ -1,16 +1,14 @@
 === Allgemeine Voraussetzungen
 
 |===
-| *Infrastruktur (VM oder Server)*| Linux-basierter Server 
-(lokale VM oder Cloud-VM)
+| *Infrastruktur (VM oder Server)*| Linux-basierter Server (lokale VM oder Cloud-VM)
 | *Betriebssystem*| Linux, z. B. Ubuntu oder vergleichbare Distributionen.
-| *Docker-Umgebung*| Docker Engine: Version ≥ 20.x
-Docker Compose: Version ≥ 1.29 oder Compose V2
+| *Docker-Umgebung*| Docker Engine: Version ≥ 20.x 
+|	|Docker Compose: Version ≥ 1.29 oder Compose V2
 | *CPU, RAM, Speicher*| Abhängig von der Größe der Dokumentensammlung und der Zahl der Benutzer (siehe Punkt 3).
-| *Gemeinsames Verzeichnis*
- *(SHARED_FOLDER)*| Ein beschreibbares Verzeichnis auf dem Server für den Datenaustausch.
+| *Gemeinsames Verzeichnis* *(SHARED_FOLDER)*| Ein beschreibbares Verzeichnis auf dem Server für den Datenaustausch.
 | *Internetzugang / Proxy*| Download der Docker-Images
-Verbindung zur Azure OpenAI API
-Proxy-Unterstützung ist möglich.
+|	|Verbindung zur Azure OpenAI API|
+|	|Proxy-Unterstützung ist möglich
 | *Netzwerk / Ports*| Standardzugang: Port 8000 (bei Bedarf anpassbar).
 |===

@@ -1,0 +1,10 @@
+=== Häufig gestellte Fragen (FAQ)
+
+Wie wird die Lösung bereitgestellt?
+Über ein Docker Compose-Skript auf einem Linux-Server.
+Ist eine spezielle Azure-Integration notwendig?
+Nein. Nur API-Key und Endpoint werden benötigt.
+Ist eine VM zwingend erforderlich?
+Nein. Jeder Linux-Server mit Docker Compose ist geeignet.
+Benötigt die Lösung eine dauerhafte Internetverbindung?
+Ja, sowohl für die Installation als auch für die Kommunikation mit der Azure OpenAI API.

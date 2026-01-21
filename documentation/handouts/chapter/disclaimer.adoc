@@ -6,13 +6,22 @@ image::theme/logo.png[Unser Firmenlogo,align=left,width=50]
 Die CGS mbH besitzt jahrzehntelange Erfahrung in der Entwicklung, Implementierung und Betreuung komplexer Softwaresysteme. Mit unseren KI-Experten bieten wir Ihnen neben dem CGS Assist auch gerne KI-Beratung und Unterstützung bei der Entwicklung oder Integration von KI-Systemen. 
 
 *CGS mbH - Consulting Gesellschaft für Systementwicklung* 
+
 Lange Straße 1 
+
 38100 Braunschweig 
+
 www.cgs-online.de 
+
 www.rias-revision.de 
 
-Beratung & Vertrieb 
+
+*Beratung & Vertrieb*
+
 Stefan Franz 
+
 sfranz@cgs-online.de
+
 Tel. (+49) 531 / 1209-384 
+
 Mobil (+49) 177 / 792 8366

@@ -4,30 +4,30 @@ title-page:
   background-color: 'EAEAEA'  # Hellgrauer Titelseiten-Hintergrund
   title:
     font-size: 38
-    font-color: '0066cc'
+    font-color: '222222'
     font-style: bold
     align: center
     top-margin: 380  # Abstand von oben in Punkten
   subtitle:
     font-size: 26
-    font-color: '333333'
+    font-color: '222222'
     font-style: italic
     align: center
     top-margin: 400
-   subtitle2:
+  subtitle2:
     font-size: 26
-    font-color: '333333'
+    font-color: '222222'
     font-style: italic
     align: center
     top-margin: 410
   author:
     font-size: 16
-    font-color: '333333'
+    font-color: '222222'
     align: center
     top-margin: 430
   date:
     font-size: 16
-    font-color: '333333'
+    font-color: '222222'
     align: center
     top-margin: 440
 
