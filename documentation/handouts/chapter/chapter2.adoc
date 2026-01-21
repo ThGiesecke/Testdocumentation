@@ -1,0 +1,22 @@
+=== Anbindung von Sprachmodellen
+
+==== Azure OpenAI
+
+Erforderlich ist ein aktives Azure-Konto mit OpenAI Subscription.
+
+|===
+
+| *Azure-Account mit OpenAI Subscription*
+| Anmeldung & Einrichtung, Abo beachten
+
+| *Azure API Key & Endpunkt*
+| Zugangsdaten für LLM bereitstellen
+
+| *Azure OpenAI Model-Deployment*
+| z. B. 'gpt-4o', 'gpt-4o-mini, etc.
+(Token-per-Minute-Rate-Limit maximieren)
+
+| *Maximale Token-Rate*
+| Das Azure-Konto muss ein passendes Token-per-Minute-Limit bieten (abhängig vom Anfragevolumen).
+
+|===
