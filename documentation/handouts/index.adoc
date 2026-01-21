@@ -2,7 +2,7 @@
 :doctype: book
 :author: cgs
 :revdate: 2026-02-02 
-:front-cover-image:
+ifdef::backend-pdf[] :front-cover-image: image::theme/ASSISTDOC-TitlePage.png[] endif::[]
 :sectnums:
 :sectnumlevels: 7
 //:cgs-assist: 1
