@@ -1,0 +1,58 @@
+name: Asciidoctor Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: boolean
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true
+
+env:
+  REVISION: 1.0.0
+
+jobs:
+  test:
+    if: github.ref == 'refs/heads/deploy'
+    runs-on: ubuntu-latest
+    container:
+      image: asciidoctor/docker-asciidoctor:latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run asciidoctor on index.adoc
+        run: asciidoctor documentation/handouts.adoc
+
+  pages:
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    container:
+      image: asciidoctor/docker-asciidoctor:latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build HTML and PDF docs
+        run: |
+          asciidoctor -a revnumber=$REVISION -D public public/index.adoc
+          asciidoctor-pdf -a revnumber=$REVISION -D public -a pdf-theme=ASSISTDOC -a pdf-themesdir=themes -o user.pdf documentation/handouts.adoc
+
+      - name: Upload documentation artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation
+          path: public
