@@ -1,3 +1,7 @@
 === Häufig gestellte Fragen (FAQ)
 
-include::../../COLLECTION_FAQ.adoc[[tag=!*]]
+[cols="2*", options="header"]
+|===
+|  Frage| Antwort 
+include::../../COLLECTION_FAQ.adoc[[tag=Kunde-FAQ]]
+|===
