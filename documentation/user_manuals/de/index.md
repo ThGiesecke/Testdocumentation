@@ -1,10 +1,9 @@
 
-# ARC Assist Anwenderhandbuch
+# CGS Assist Anwenderhandbuch
 
 | Version | Autor | Datum     |
 | ------- | ----- | --------- |
 | 2.0     | CGS   | 02.02.2026|
-
 
 
 ### Inhaltsverzeichnis
@@ -26,20 +25,18 @@
 - 1.2.7 [Lizenzverwaltung](#127-lizenzverwaltung)
 - 2 [Kontakt](#2-kontakt)
 
-<div style="page-break-after: always;"/>
-
 ## 1. Anwendungsbeschreibung 
 
 Es ist innerhalb von CGS Assist, im weiteren nur noch Assist genannt, möglich, KI-unterstütztes Unternehmenswissen in separaten Chats oder vorbereiteten Anwendungsfällen abzufragen und zu nutzen. 
-Dieses Wissen basiert auf den Inhalten der hinterlegten Dokumente.
+Dieses Wissen basiert, je nach Einstellung, auf den Inhalten der hinterlegten Dokumente oder einer Cloud.
 Alle Chatverläufe und Use Case Verläufe werden gespeichert und können auch nach dem Browser schließen und Neuanmeldung wieder geöffnet werden.
 Bestimmte regelmäßige Anwendungsfälle werden im Assist als Templates verwaltet, um Routinen zu vereinfachen. Die Anwendungsfälle sind mit Use Cases wie eine Art Checkliste erstellt.
-
-Es können bei entsprechender Berechtigung, automatisierte Zeitpläne erstellt werden, wie z.B. die Abfrage nach neuesten Nachrichten der BaFin.
+Es können bei entsprechender Berechtigung, automatisierte, zeitgesteurte Abfragen auf automatisierte bereitgestellte Informationsquellen, sogenannte Feeds erstellt werden.
 
 ![CGS-Assist](./images/cgs-Abbildung-start.jpg "CGS Assist")
 
 Über eine Navigation am oberen Rand sind die thematisierten Navigationsbereiche erreichbar.
+Je nach Berechtigungen des Anwenders können die Anzahl der Einträge bzw. das Design varieren.
 
 ![Navigationsbereiche](./images/Abbildung-1.jpg "Navigationsbereiche")
 
