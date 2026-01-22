@@ -84,6 +84,7 @@ Ein **beschreibbares Verzeichnis** auf dem Server für den Datenaustausch zwisch
 
 **Empfehlung für Produktion:** Einsatz eines Reverse Proxys (z. B. Caddy, Nginx) mit TLS-Zertifikaten.
 
+#end::kunden-anforderungen-allgemein[]
 
 **DNS-Anforderungen für Caddy mit Let's Encrypt:**
 
@@ -111,7 +112,7 @@ cgs-assist.ihrefirma.de {
 - Optional: Eigene TLS-Zertifikate, falls Let's Encrypt nicht verwendet werden soll
 
 ---
-
+#tag::kunden-anforderungen-allgemein[]
 
 ## 2. LLM-Provider – Bereitstellung durch den Kunden 
 
@@ -145,7 +146,7 @@ cgs-assist.ihrefirma.de {
 - Freigabe für Azure OpenAI Service (kann Genehmigung erfordern)
 - Ausreichende Berechtigungen zum Erstellen von Ressourcen
 
-
+#end::kunden-anforderungen-allgemein[]
 
 #### Schritt-für-Schritt: Azure OpenAI Service aufsetzen
 
@@ -403,7 +404,7 @@ Für große Datenmengen, hohe Nutzerzahlen oder rechenintensive Aufgaben:
 **Hinweis bei lokalen LLMs:** Die oben genannten Anforderungen gelten für die Anwendung. Lokale LLM-Server benötigen **zusätzliche** GPU-Hardware (siehe Abschnitt 2.4).
 
 ---
-
+#tag::kunden-anforderungen-allgemein[]
 ## 4. Systemkomponenten 
 
 Die Lösung besteht aus folgenden Docker-Containern:
@@ -440,7 +441,7 @@ Die Lösung besteht aus folgenden Docker-Containern:
   - Azure OpenAI: `*.openai.azure.com`
   - AWS Bedrock: `bedrock-runtime.<region>.amazonaws.com`
   - Lokal: Interne Verbindung
-
+#end::kunden-anforderungen-allgemein[]
 **Proxy-Konfiguration:**
 ```bash
 HTTP_PROXY=http://proxy.ihrefirma.de:8080
