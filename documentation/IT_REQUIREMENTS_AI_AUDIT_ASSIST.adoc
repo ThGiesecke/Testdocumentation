@@ -338,7 +338,7 @@ ollama pull llama3.1:70b
 ---
 
 ## 3. Serveranforderungen 
-#tag::Kunden-Serveranforderungen]
+#tag::Kunden-Serveranforderungen[]
 ### 3.1 Einfache Umgebung (8 GB RAM)
 
 **Geeignet für:** Test- und PoC-Umgebungen
