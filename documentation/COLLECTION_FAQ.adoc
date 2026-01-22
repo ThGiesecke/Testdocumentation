@@ -17,10 +17,14 @@ Diese FAQ Liste kann je Kunde und Projekt um spezifische Fragen/Antworten erweit
 |Wie lange dauert eine Standard-Auslieferung?|  Für einen typischen Pilotbetrieb (PoC) sollten – bei verfügbarer Infrastruktur und schnellen Freigaben – ca. 2–6 Wochen eingeplant werden. Der Übergang in den Produktionsbetrieb hängt stark von internen Prozessen beim Kunden (Change-Management, Security-Reviews) ab.
 |Wie wird die Lösung bereitgestellt?|Über ein Docker Compose-Skript auf einem Linux-Server.
 |Ist eine spezielle Azure-Integration notwendig?|Nein. Nur API-Key und Endpoint werden benötigt.
+#tag::Kunde-FAQ[]
 |Ist eine VM zwingend erforderlich?|Nein. Jeder Linux-Server mit Docker Compose ist geeignet.
+#end::Kunde-FAQ[]
 |Benötigt die Lösung eine dauerhafte Internetverbindung? | Cloud-Provider (Azure/AWS): Ja 
 |	  |Lokale Modelle: Nur für Installation
-|Wird ein LLM mitgeliefert?| Kunde muss selbst einen LLM-Provider bereitstellen (Azure OpenAI, AWS Bedrock oder lokales Modell). 
+#tag::Kunde-FAQ[]
+|Wird ein LLM mitgeliefert?| Kunde muss selbst einen LLM-Provider bereitstellen (Azure OpenAI, AWS Bedrock oder lokales Modell).
+#end::Kunde-FAQ[] 
 |Welchen LLM-Provider soll ich wählen?| Empfehlung:
 |	  |Azure OpenAI (bevorzugt) – wenn Sie Azure nutzen
 |	  |AWS Bedrock (gleichwertig) – wenn Sie AWS nutzen

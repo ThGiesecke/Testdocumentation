@@ -1,7 +1,7 @@
 
 image::logo.png[Firmenlogo,align=left,width=50]
 
-== Ihr Partner für Künstliche Intelligenz 
+=== Ihr Partner für Künstliche Intelligenz 
 
 Die CGS mbH besitzt jahrzehntelange Erfahrung in der Entwicklung, Implementierung und Betreuung komplexer Softwaresysteme. Mit unseren KI-Experten bieten wir Ihnen neben dem CGS Assist auch gerne KI-Beratung und Unterstützung bei der Entwicklung oder Integration von KI-Systemen. 
 

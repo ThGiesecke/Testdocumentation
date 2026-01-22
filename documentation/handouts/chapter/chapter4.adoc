@@ -7,3 +7,4 @@ include::../../COLLECTION_FAQ.adoc[tags=Kunde-FAQ1]
 |  Frage| Antwort 
 include::../../COLLECTION_FAQ.adoc[tags=Kunde-FAQ]
 |===
+
