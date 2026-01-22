@@ -7,23 +7,23 @@ title-page:
     font-color: '222222'
     font-style: bold
     align: center
-    top-margin: 800  # Abstand von oben in Punkten
+    top-margin: 1000  # Abstand von oben in Punkten
   subtitle:
     font-size: 26
     font-color: '222222'
     font-style: italic
     align: center
-    top-margin: 820
+    top-margin: 1020
   author:
     font-size: 16
     font-color: '222222'
     align: left
-    top-margin: 840
+    top-margin: 1100
   date:
     font-size: 16
     font-color: '222222'
     align: left
-    top-margin: 860
+    top-margin: 1120
 
 base:
   font-color: '222222'
