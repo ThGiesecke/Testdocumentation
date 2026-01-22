@@ -149,6 +149,14 @@ Im oberen Bereich befinden sich Filter- um die Anzahl zu begrenzen und Sortierun
 
 ![Navigationsbereich - Dokumente - Teildokumente öffnen](./images/Abbildung-13.jpg "Navigationsbereich - Dokumente - Teildokumente öffnen")
 
+#### 1.1.5 Navigationsbereich "Portal"
+
+Hier werden alle vefügbaren Verlinkungen zu anderen Seiten oder Anwendungen angezeigt, für die der Anwender mit seiner Rolle berechtigt ist.
+
+![Navigationsbereich - Portal](./images/Abbildung-40.jpg "Navigationsbereich - Portal")
+
+Mit einem Klick auf das Symbol, weird die Verknüpfung geöffnet.
+
 ### 1.2 Assist Administration
 
 Innerhalb der Assist Administration gibt es die Möglichkeit, alle Systemrelevanten Daten zentral zu verwalten. So können hier Benutzer und Rollen, 
@@ -238,6 +246,17 @@ Auch der Kontakt per Mail zum Assist Service ist von hier aus möglich
 Es kann nach Auswahl eine gänzlich neue Lizenz hochgeladen werden.
 
 ![Administration - Lizenzverwaltung - Lizenz laden](./images/Abbildung-31.jpg "Administration - Lizenzverwaltung - Lizenz laden")
+
+#### 1.2.8 Portal-Seite
+
+Hier können die Verknüpfungen zu anderen Seiten und Applikationen verwaltet werden. Es besteht die Möglichkeit zur Neuanlage, 
+zum Löschen und Bearbeiten einzelner Einträge und zum Deaktivieren der gesamtem Portal-Seite. Dadurch ist diese nicht in der Navigation verfügbar.
+
+![Administration - Portal-Seite](./images/Abbildung-41.jpg "Administration - Portal-Seite")
+
+Es kann nach Auswahl eine gänzlich neue Lizenz hochgeladen werden.
+
+![Administration - Portal-Seite - Link erstellen](./images/Abbildung-42.jpg "Administration - Portal-Seite - Link erstellen")
 
 <div style="page-break-after: always;"/>
 
