@@ -3,5 +3,5 @@
 [cols="2*", options="header"]
 |===
 |  Frage| Antwort 
-include::../../COLLECTION_FAQ.adoc[[tag=Kunde-FAQ]]
+include::../../COLLECTION_FAQ.adoc[[tags=Kunde-FAQ]]
 |===
