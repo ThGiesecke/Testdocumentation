@@ -1,7 +1,9 @@
 ## Sammlung häufig gestellter Fragen
 
+#tag:: Kunde-FAQ[]
 Dieses Dokument ist zur Sammlung häufig gestellter Fragen in allen Bereichen des Projektes (z.B. Auslieferung, Bereitstellung).
 Diese FAQ Liste kann je Kunde und Projekt um spezifische Fragen/Antworten erweitert werden.
+#tag:: Kunde-FAQ[]
 
 [cols="2*", options="header"]
 |===
