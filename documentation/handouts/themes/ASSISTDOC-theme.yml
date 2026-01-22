@@ -1,7 +1,6 @@
 extends: default
 title-page:
   background-image: image:ASSISTDOC-TitlePage.png[]
-  background-color: 'EAEAEA'  # Hellgrauer Titelseiten-Hintergrund
   title:
     font-size: 38
     font-color: '090909'
