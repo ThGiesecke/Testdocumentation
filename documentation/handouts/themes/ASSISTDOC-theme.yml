@@ -42,25 +42,25 @@ toc:
 heading:
   h1:
     font-size: 23
-    font-color: '668287'
+    font-color: '3f6172'
     font-style: italic
   h2:
     font-size: 20
-    font-color: '668287'
+    font-color: '3f6172'
     font-style: italic
   h3:
     font-size: 12
-    font-color: '668287'
+    font-color: '3f6172'
     font-style: italic
   h4:
     font-size: 10
-    font-color: '668287'
+    font-color: '3f6172'
     font-style: italic
 
 table:
   border-color: 'EEEEEE'
   head:
-    font-color: '668287'
+    font-color: '3f6172'
     background-color: 'ECECEC'
     font-style: italic
   body:
