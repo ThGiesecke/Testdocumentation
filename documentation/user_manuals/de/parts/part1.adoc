@@ -1,0 +1,23 @@
+== 1. Anwendungsbeschreibung 
+
+Es ist innerhalb von CGS Assist, im weiteren nur noch Assist genannt, möglich, KI-unterstütztes Unternehmenswissen in separaten Chats oder vorbereiteten Anwendungsfällen abzufragen und zu nutzen. 
+Dieses Wissen basiert, je nach Einstellung, auf den Inhalten der hinterlegten Dokumente oder einer Cloud.
+Alle Chatverläufe und Use Case Verläufe werden gespeichert und können auch nach dem Browser schließen und Neuanmeldung wieder geöffnet werden.
+Bestimmte regelmäßige Anwendungsfälle werden im Assist als Templates verwaltet, um Routinen zu vereinfachen. Die Anwendungsfälle sind mit Use Cases wie eine Art Checkliste erstellt.
+Es können bei entsprechender Berechtigung, automatisierte, zeitgesteurte Abfragen auf automatisierte bereitgestellte Informationsquellen, sogenannte Feeds erstellt werden.
+
+image::/images/cgs-Abbildung-start.jpg[CGS Assist,title="CGS Assist"]
+
+Über eine Navigation am oberen Rand sind die thematisierten Navigationsbereiche erreichbar.
+Je nach Berechtigungen des Anwenders können die Anzahl der Einträge bzw. das Design varieren.
+
+image::images/Abbildung-1.jpg[Navigationsbereiche, title="Navigationsbereiche"]
+
+Unterseiten dieser Navigationsbereiche sind dann jeweils über die Baumnavigation am linken Rand erreichbar.
+
+image::images/Abbildung-2.jpg[Navigationsbereich - Baumnavigation, title="Navigationsbereich - Baumnavigation"]
+
+Zusätzlich kann über ein Symbol am rechten oberen Rand die Auswahl der Sprache innerhalb der Anwendung getroffen werden und die Ansicht in den Dark Mode, bzw. wieder zurück, gewechselt werden. 
+Auch kann das Profil eingesehen werden bzw. eine Änderung des persönlichen Passwortes ist möglich.
+
+image::images/Abbildung-3.jpg[Sprachwechsel und Darkmode, title=Sprachwechsel und Darkmode"]

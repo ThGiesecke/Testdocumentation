@@ -1,0 +1,111 @@
+=== 1.1 Assist Anwendung
+
+==== 1.1.1 Navigationsbereich "KI Chat"
+
+Hier können einzelne Anfragen gestartet werden. Diese lassen sich in Chats organisieren und werden systemseitig gespeichert, d.h. sie sind auch nach Sitzungsende weiterhin verfügbar.
+Es kann vor dem Ausführen von Anfragen ausgewählt werden, ob der Dokumentenspeicher oder die Datenbank zur Wissensfindung durchsucht werden sollen. Beides gleichzeitig ist nicht möglich.
+Es bestehen die Möglichkeiten zur Anfrage über eine manuelle Texteingabe, über eine Sprachaufnahme per Mikrofon oder das Laden eines Dokumentes.
+
+![Navigationsbereich KI Chat](./images/Abbildung-38.jpg "Navigationsbereich KI Chat" )
+
+Die Inhalte lassen sich mit einem „Copy“ Button in der Zwischenablage speichern zur weiteren Verarbeitung.
+
+image::images/Abbildung-4.jpg[Navigationsbereich KI Chat  - speichern, title="Navigationsbereich KI Chat  - speichern"]
+
+Um einen Chat umzubenennen, kann der Edit Button (Stift) benutz werden.
+Um einen Chat im linken Baummenü zu löschen, muss zuerst der Löschen Button betätigt werden und danach das Löschen mit Klick auf den Haken bestätigt werden.
+
+image::images/Abbildung-5.jpg[Navigationsbereich KI Chat  - löschen, title="Navigationsbereich KI Chat  - löschen"]
+
+==== 1.1.2 Navigationsbereich "Anwendungsfälle" 
+
+Hier werden alle aktivierten Anwendungsfälle, nach den Bereichen gruppiert, angezeigt. Die Zordnung der Anwendungsfälle zu den bereichen, erfolgt bei Anlage in der Administration.
+Anwendungsfälle sind in der Administration hinterlegte und freigegebene Use Case Listen, die vor der Ausführung nur noch mit konkreten Inhalten zu befüllen sind. 
+Diese Listen erleichtern routinemäßige Anfragen.
+
+image::images/Abbildung-6.jpg[Navigationsbereich Anwendungsfälle, title="Navigationsbereich Anwendungsfälle"]
+
+Zum Öffnen eines konkreten Anwendungsfalles wird auf das Symbol mit Namen geklickt.
+
+image::images/Abbildung-7.jpg[Navigationsbereich - Anwendungsfälle - Auswahl des Falles, title="Navigationsbereich - Anwendungsfälle - Auswahl des Falles"]
+
+Klick auf ein Symbol mit Namen öffnet den Anwendungsfall zur Datenaufnahme.
+
+image::images/Abbildung-8.jpg[Navigationsbereich - Anwendungsfälle - Auswahl des Falles, title="Navigationsbereich - Anwendungsfälle - Auswahl des Falles"]
+
+Hier werden bereits fertig hinterlegte Use Cases angezeigt, die mit Eingaben befüllt werden können. Anschließend kann die Abfrage durch Klick auf „Senden“ abgeschickt werden.
+
+image::images/Abbildung-39.jpg[Navigationsbereich - Anwendungsfälle - Senden, title="Navigationsbereich - Anwendungsfälle - Senden"]
+
+Während der Verarbeitung wird eine Wait Box angezeigt und der Statusverlauf als Info angezeigt.
+
+image::images/Abbildung-9.jpg[Navigationsbereich - Anwendungsfälle - Waitbox, title="Navigationsbereich - Anwendungsfälle - Waitbox"]
+
+Nach der Rückmeldung zur Anfrage kann über einen Butten in den Navigationsbereich „Chat“ geöffnet werden, um auf diesen konkreten Use Case weitere Anfragen zu starten.
+Das Ergebnis einer Anfrage kann auch gespeichert werden und ist dann als separater Chat verfügbar.
+
+image::images/Abbildung-10.jpg[Navigationsbereich - Anwendungsfälle - Löschen eines Falles, title="Navigationsbereich - Anwendungsfälle - Löschen eines Falles"]
+
+Um einen Use Case zu löschen, muss zuerst der Lösch Button betätigt werden und danach die Abfrage mit „OK“ bestätigt werden.
+
+image::images/Abbildung-11.jpg[Navigationsbereich - Anwendungsfälle - Löschen eines Falles, title="Navigationsbereich - Anwendungsfälle - Löschen eines Falles"]
+
+==== 1.1.3 Navigationsbereich "Automatisierung"
+
+Hier werden, bei vorhandener Berechtigung, alle automatisierten bereitgestellten Informationsquellen (Feeds) gelistet und verwaltet.
+Die markierte Nummer (rot) zeigt die Anzahl der aktuellen Ergebnisse das letzten Laufs.
+
+image::images/Abbildung-27.jpg[Navigationsbereich - Automatisierung, title="Navigationsbereich - Automatisierung"]
+
+Zum Öffnen eine Feed wird auf das Symbol mit Namen geklickt.
+In der Übersicht werden alle gespeicherten Zeitpläne angezeigt. Es können hier neue Zeitpläne erstellt werden und/oder vorhandene gelöscht werden.
+
+image::images/Abbildung-26.jpg[Navigationsbereich - Automatisierung - Zeitpläne, title="Navigationsbereich - Automatisierung - Zeitpläne"]
+
+Im Bereich Ausführungsprotokolle werden alle Programmläufe gelistet. Über einen Button können die genauen Details angesehen werden.
+
+image::images/Abbildung-28.jpg[Navigationsbereich - Automatisierung, title="Navigationsbereich - Automatisierung"]
+
+Die Lesebestätigung kann verschieden gesetzt werden. 
+Blau Schrift ungelesen
+Schwarz gelesen
+Habe es auch gelesen ?????
+
+==== 1.1.4 Navigationsbereich "Dokumente" 
+
+Hier werden alle verfügbaren und durchsuchbaren Dokumente angezeigt, für die der Anwender mit seiner Rolle berechtigt ist.
+
+image::images/Abbildung-12.jpg[Navigationsbereich - Dokumente - Baum löschen, title="Navigationsbereich - Dokumente - Baum löschen"]
+
+In der Baumnavigation werden nur die Ordner gelistet, auf die der Anwender berechtigt ist. 
+Die Zuordnung der Dokumente zu den jeweiligen Ordnern erfolgt in der Administration
+
+image::images/Abbildung-33.jpg[Navigationsbereich - Dokumente - Baumnavigation, title="Navigationsbereich - Dokumente - Baumnavigation"]
+
+Die Dokumente können über einen Button heruntergeladen werden und manuell die Ansicht aktualisiert werden. Da es bei sehr vielen Dokumenten zu Zeitverzögerungen kommen kann wurde ein Lazy-Loading implementiert.
+Deshalb können über das Reload Icon die einzelnen Embeddings, also Teildokumente, manuel nachgeladen werden. 
+Im oberen Bereich befinden sich Filter- um die Anzahl zu begrenzen und Sortierungsmöglichkeiten nach Quelle, ID und Vorschau. Die Filterresultate aktualisieren sich bereits während der Eingabe.
+Über Icon können Dokumente und somit die Inhalte des RAG bearbeitet werden werden.
+
+|===
+image::images/Abbildung-34.jpg[Dokument herunterladen]  | Dokument herunterladen   | 
+|image::images/Abbildung-35.jpg[Embeddings laden]		| Embeddings laden (einzeln nachladen)   | 
+|image::images/Abbildung-36.jpg[Aus RAG-System ((Retrieval Augmented Generation)) entfernen (Dokument bleibt in der Ordnerstruktur gespeichert)] | Aus RAG-System ((Retrieval Augmented Generation)) entfernen (Dokument bleibt in der Ordnerstruktur gespeichert)   | 
+|image::images/Abbildung-37.jpg[Dokument endgültig löschen] | Dokument endgültig löschen   | 
+|===
+
+Über einen Klick auf das Symbol vor der Dokument, können die Teildokumente angezeigt werden.
+
+image::images/Abbildung-13.jpg[[Navigationsbereich - Dokumente - Teildokumente öffnen, title="[Navigationsbereich - Dokumente - Teildokumente öffnen"]
+
+==== 1.1.5 Navigationsbereich "Portal"
+
+Hier werden alle vefügbaren Verlinkungen zu anderen Seiten oder Anwendungen angezeigt, für die der Anwender mit seiner Rolle berechtigt ist.
+
+image::images/Abbildung-40.jpg[Navigationsbereich - Portal, title="Navigationsbereich - Portal"]
+
+Mit einem Klick auf das Symbol, wird die Verknüpfung, je nach Browsereinstellung, in einen neuen Browsertab oder Fenster geöffnet.
+
+
+
+

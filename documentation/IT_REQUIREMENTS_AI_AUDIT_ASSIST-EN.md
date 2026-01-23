@@ -16,8 +16,6 @@ The customer must provide their own LLM provider. The following options are supp
 
 **Note:** Azure OpenAI is our preferred recommendation, but AWS Bedrock and local models are equally supported.
 
----
-
 ## 1. General Requirements
  
 ### 1.1 Infrastructure (VM or Server)
@@ -141,8 +139,6 @@ Access only via IP address: http://<server-ip>:8000 (recommended only for testin
 - Provide FQDN for Caddyfile configuration
 - Optional: Own TLS certificates if Let's Encrypt is not used
 
----
-
 ## 2. LLM Provider – Setup by the Customer
 
 *IMPORTANT:* CGS Assist does **not provide an LLM**. The customer must set up and operate one of the following LLM providers.
@@ -159,8 +155,6 @@ Access only via IP address: http://<server-ip>:8000 (recommended only for testin
 - Existing cloud infrastructure (Azure or AWS)
 - Data privacy and compliance requirements
 - Budget and operating model
-
----
 
 ### 2.2 Option A: Azure OpenAI (Recommended)
 
@@ -288,8 +282,6 @@ AWS Region: eu-central-1
 Model ID: anthropic.claude-3-5-sonnet-20240620-v1:0
 ```
 
----
-
 ##### 2.4 Option C: Local Models (for maximum data privacy)
 
 **For customers who do not want any cloud connectivity.**
@@ -324,7 +316,6 @@ ollama pull llama3.1:70b
 
 # API runs at http://localhost:11434/v1 (OpenAI-compatible)
 ```
----
 
 ### 2.5 Sizing Token Rate Limits
 
@@ -342,8 +333,6 @@ ollama pull llama3.1:70b
 - **Azure OpenAI:** Adjust token limits in Azure AI Foundry
 - **AWS Bedrock:** Check service quotas in AWS Console
 - **Local Models:** Provide sufficient GPU capacity
-
----
 
 ### 2.6 LLM Provider Cost Overview
 
@@ -364,8 +353,6 @@ ollama pull llama3.1:70b
 - No API costs
 - Hardware investment: €5,000–50,000+
 - Ongoing electricity costs
-
----
 
 ## 3. Server Requirements
 
@@ -398,8 +385,6 @@ ollama pull llama3.1:70b
 
 **Note for local LLMs:** The requirements above apply to the application. Local LLM servers need additional GPU hardware (see section 2.4).
 
----
-
 ## 4. System Components
 
 The solution consists of the following Docker containers:
@@ -411,8 +396,6 @@ The solution consists of the following Docker containers:
 - **Vector Store:** ChromaDB for RAG
 
 **Deployment:** Via Docker Compose on a Linux server.
-
----
 
 ## 5. Database and Storage
 
@@ -429,8 +412,6 @@ The solution consists of the following Docker containers:
 - Local user/password management
 - Azure AD/Entra (OIDC/SAML)
 - API tokens for integrations
-
----
 
 ## 7. Security and Compliance
 
@@ -463,8 +444,6 @@ Mandatory for production. Certificates:
 
 **Local models:** Highest GDPR compliance
 
----
-
 ## 8. Backup and Recovery
 
 **Customer responsibility to back up:**
@@ -472,8 +451,6 @@ Mandatory for production. Certificates:
 - Database
 - SHARED_FOLDER
 - Configuration files
-
----
 
 ## 9. Patch Management
 
