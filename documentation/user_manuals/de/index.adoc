@@ -1,7 +1,8 @@
 //= Arc Assist: Anwenderhandbuch
 = CGS Assist: Anwenderhandbuch
 :doctype: book
-:author: arc
+//:author: arc
+:author: CGS GmbH
 :revdate: 2002-02-02
 :toc: left
 :toc-interactive: true // in pdf the active section will be highlighted

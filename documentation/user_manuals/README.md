@@ -3,17 +3,12 @@
 User handbook in German and English. 
 Change some places from "CGS Assist" to "Arc Assist"
 
-
-
 <ul>
-    <li> de|en/docs/index-md </li>
+    <li> de|en/docs/index.adoc </li>
       <ul>
-		<li> line 2 "CGS Assist Anwenderhandbuch" to "ARC Assist Anwenderhandbuch"</li>
-		<li> line 4 Version table data</li>
-		<li> line 33 "CGS Assist" to "ARC Assist"</li>  
-		<li> line 38 image "cgs-Abbildung-start" to "arc-Abbildung-start" </li>
-		<li> line 69 image "cgs-Abbildung-4" to "arc-Abbildung-4" </li>
-		<li> Chapter 2 Contactdata</li>
+		<li> line 1 and 2 </li>
+		<li> line 4 and 5</li>
+		<li> line 9 and 10 (Flag to change places in files)</li>
     </ul>
   </li>
 </ul>
