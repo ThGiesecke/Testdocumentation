@@ -76,17 +76,17 @@ A **writable directory** on the server for data exchange between containers and 
 
 If you want to use Caddy with automatic Let’s Encrypt TLS certificates:
 
-- **FQDN required:** Application must be reachable via a fully qualified domain name (e.g., `cgs-assist.yourcompany.com`)
+- **FQDN required:** Application must be reachable via a fully qualified domain name (e.g., `ai-audit-assist.yourcompany.com`)
 - **DNS resolution:** The FQDN must resolve to the public IP address of the server (A-record or CNAME)
 - **Port 80 accessible:** Must be reachable from the internet (for ACME HTTP challenge)
 
 **Caddyfile configuration example:**
 
-``
-cgs-assist.yourcompany.com {
+~~~json
+ai-audit-assist.yourcompany.com {
     reverse_proxy cgs_assist_backend:8000
 }
-``
+~~~
 
 **Alternative DNS-01 (publicly trusted, without open 80/443):**
 
@@ -94,7 +94,7 @@ Certificate requests are verified via DNS entries instead of HTTP content
 
 Provider syntax example, Cloudflare token as Env-Var:
 
-``
+~~~json
 texttest.server.com {reverse_proxy cgs_assist_server:8000 {
         header_up X-Forwarded-Proto {scheme}        
         header_up X-Forwarded-Host {host}        
@@ -109,7 +109,7 @@ texttest.server.com {reverse_proxy cgs_assist_server:8000 {
                 # optional: resolvers 1.1.1.1 8.8.8.8
                 }
         }
-``
+~~~
 
 **Important:** The "caddy-dns" plugin must be included in the Caddy server's configuration, otherwise "dns cloudflare" will not be found.
 
@@ -117,13 +117,13 @@ Own certificate example (PEM + Key):
 
 If a certificate exists (e.g., from your company PKI or manually generated), integrate it directly:
 
-``
+~~~json
 texttest.server.com {reverse_proxy cgs_assist_server:8000 header {
     Strict-Transport-Security "max-age=31536000; includeSubDomains" -Server}    
     # Certificate + Private Key (PEM)    
     tls /etc/caddy/certs/test.server.com.fullchain.pem /etc/caddy/certs/test.server.com.key
     }
-``
+~~~
 
 **Important:** The certificate chain must be complete (typically “fullchain”) and the SANs (Subject Alternative Names) must match the hostname.
 
@@ -135,13 +135,13 @@ Access only via IP address: http://<server-ip>:8000 (recommended only for testin
 **Customer responsibility:**
 
 - Firewall rules for ports 80 and 443 (production) or 8000 (testing)
-- DNS configuration: A-record for the desired FQDN (e.g., 'cgs-assist.yourcompany.com') pointing to server IP
+- DNS configuration: A-record for the desired FQDN (e.g., 'ai-audit-assist.yourcompany.com') pointing to server IP
 - Provide FQDN for Caddyfile configuration
 - Optional: Own TLS certificates if Let's Encrypt is not used
 
 ## 2. LLM Provider – Setup by the Customer
 
-*IMPORTANT:* CGS Assist does **not provide an LLM**. The customer must set up and operate one of the following LLM providers.
+*IMPORTANT:* AI Audit-Assist does **not provide an LLM**. The customer must set up and operate one of the following LLM providers.
 
 ### 2.1 Overview of Supported LLM Providers
 |Provider		|Recommendation		|Benefits											|Setup-Complexity	|
@@ -184,7 +184,7 @@ Access only via IP address: http://<server-ip>:8000 (recommended only for testin
 - **Subscription:** Select your Azure subscription
 - **Resource group:** Create or select one
 - **Region:** Select a region (e.g., West Europe, North Europe)
-- **Name:** Assign a unique name (e.g., cgs-assist-openai-prod)
+- **Name:** Assign a unique name (e.g., ai-audit-assist-openai-prod)
 - **Pricing tier:** Standard S0 or higher
 - **Review and create:** Click "Review + Create" and then "Create"
 
@@ -207,12 +207,12 @@ Access only via IP address: http://<server-ip>:8000 (recommended only for testin
 
 **Example:**
 
-``
-Endpoint: https://cgs-assist-openai-prod.openai.azure.com/
+~~~bash
+Endpoint: https://ai-audit-assist-openai-prod.openai.azure.com/
 API Key: 1234567890abcdef...
 Region: westeurope
 Deployment Name: gpt-4o
-``
+~~~
 
 ### 2.3 Option B: AWS Bedrock (Equally Supported)
 
@@ -248,7 +248,7 @@ Deployment Name: gpt-4o
 
 Create an IAM user with the following policy:
 
-``
+~~~json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -262,7 +262,7 @@ Create an IAM user with the following policy:
     }
   ]
 }
-``
+~~~
 
 ##### Step 3: Generate access keys
 
@@ -277,12 +277,12 @@ IAM Console → Users → Your User → Security credentials
 
 **Example:**
 
-``
+~~~bash
 AWS Access Key ID: AKIAIOSFODNN7EXAMPLE
 AWS Secret Access Key: wJalrXUtnFEMI/K7MDENG...
 AWS Region: eu-central-1
 Model ID: anthropic.claude-3-5-sonnet-20240620-v1:0
-``
+~~~
 
 ##### 2.4 Option C: Local Models (for maximum data privacy)
 
@@ -310,15 +310,13 @@ The platform supports local LLMs via OpenAI-compatible APIs.
 
 **Setup example with Ollama:**
 
-``bash
-# Install Ollama
+~~~bash
+#Install Ollama
 curl -fsSL https://ollama.ai/install.sh | sh
-
-# Download model
+#Download model
 ollama pull llama3.1:70b
-
-# API runs at http://localhost:11434/v1 (OpenAI-compatible)
-``
+#API runs at http://localhost:11434/v1 (OpenAI-compatible)
+~~~
 
 ### 2.5 Sizing Token Rate Limits
 
@@ -392,7 +390,7 @@ ollama pull llama3.1:70b
 
 The solution consists of the following Docker containers:
 
-- **Web/API Server:** CGS Assist backend, LLM API, RAG API, Caddy
+- **Web/API Server:** AI Audit-Assist backend, LLM API, RAG API, Caddy
 - **Worker:** Celery worker for asynchronous tasks
 - **Redis:** Message broker and caching
 - **Database:** SQLite
