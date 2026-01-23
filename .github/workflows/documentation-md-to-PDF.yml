@@ -14,10 +14,10 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y pandoc texlive-xetex
 
       - name: Convert Markdown to PDF
-        run: pandoc README.md -o README.pdf
+        run: pandoc documentation/IT_REQUIREMENTS_AI_AUDIT_ASSIST-DE.md -o IT_REQUIREMENTS_AI_AUDIT_ASSIST-DE.pdf
 
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v4
         with:
           name: markdown-pdf
-          path: README.pdf
+          path: IT_REQUIREMENTS_AI_AUDIT_ASSIST-DE.pdf
