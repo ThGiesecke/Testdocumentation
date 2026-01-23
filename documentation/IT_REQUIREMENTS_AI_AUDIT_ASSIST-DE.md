@@ -2,7 +2,7 @@
 
 Dieses Dokument richtet sich an IT-Infrastruktur und Systemadministratoren und beschreibt die technischen Voraussetzungen für die Bereitstellung und den Betrieb der AI Audit Assist Plattform beim Kunden.
 
-## ⚠️ WICHTIG: LLM-Bereitstellung durch den Kunden
+## WICHTIG: LLM-Bereitstellung durch den Kunden
 
 **Die AI Audit Assist Plattform wird OHNE integriertes Large Language Model (LLM) ausgeliefert.**
 
