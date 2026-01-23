@@ -1,4 +1,4 @@
-name: Asciidoctor Build
+name: Asciidoctor Build handout
 
 on:
   workflow_dispatch:
