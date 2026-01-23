@@ -1,6 +1,6 @@
-=== 1.1 Assist Anwendung
+=== Assist Anwendung
 
-==== 1.1.1 Navigationsbereich "KI Chat"
+==== Navigationsbereich "KI Chat"
 
 Hier können einzelne Anfragen gestartet werden. Diese lassen sich in Chats organisieren und werden systemseitig gespeichert, d.h. sie sind auch nach Sitzungsende weiterhin verfügbar.
 Es kann vor dem Ausführen von Anfragen ausgewählt werden, ob der Dokumentenspeicher oder die Datenbank zur Wissensfindung durchsucht werden sollen. Beides gleichzeitig ist nicht möglich.
@@ -17,7 +17,7 @@ Um einen Chat im linken Baummenü zu löschen, muss zuerst der Löschen Button b
 
 image::../images/Abbildung-5.jpg[Navigationsbereich KI Chat  - löschen, title="Navigationsbereich KI Chat  - löschen"]
 
-==== 1.1.2 Navigationsbereich "Anwendungsfälle" 
+==== Navigationsbereich "Anwendungsfälle" 
 
 Hier werden alle aktivierten Anwendungsfälle, nach den Bereichen gruppiert, angezeigt. Die Zordnung der Anwendungsfälle zu den bereichen, erfolgt bei Anlage in der Administration.
 Anwendungsfälle sind in der Administration hinterlegte und freigegebene Use Case Listen, die vor der Ausführung nur noch mit konkreten Inhalten zu befüllen sind. 
@@ -50,7 +50,7 @@ Um einen Use Case zu löschen, muss zuerst der Lösch Button betätigt werden un
 
 image::../images/Abbildung-11.jpg[Navigationsbereich - Anwendungsfälle - Löschen eines Falles, title="Navigationsbereich - Anwendungsfälle - Löschen eines Falles"]
 
-==== 1.1.3 Navigationsbereich "Automatisierung"
+==== Navigationsbereich "Automatisierung"
 
 Hier werden, bei vorhandener Berechtigung, alle automatisierten bereitgestellten Informationsquellen (Feeds) gelistet und verwaltet.
 Die markierte Nummer (rot) zeigt die Anzahl der aktuellen Ergebnisse das letzten Laufs. Wird die Lesebestätigung von einem User gesetzt, 
@@ -74,7 +74,7 @@ Als "gelesen" markieren kann in der Übersicht erfolgen oder om Detailsdialog.
 
 image::../images/Abbildung-43.jpg[Navigationsbereich - Automatisierung - Zeitpläne - Details, title="Navigationsbereich - Automatisierung - Zeitpläne - Details"]
 
-==== 1.1.4 Navigationsbereich "Dokumente" 
+====  Navigationsbereich "Dokumente" 
 
 Hier werden alle verfügbaren und durchsuchbaren Dokumente angezeigt, für die der Anwender mit seiner Rolle berechtigt ist.
 
@@ -101,7 +101,7 @@ image::../images/Abbildung-34.jpg[Dokument herunterladen]  | Dokument herunterla
 
 image::../images/Abbildung-13.jpg[[Navigationsbereich - Dokumente - Teildokumente öffnen, title="[Navigationsbereich - Dokumente - Teildokumente öffnen"]
 
-==== 1.1.5 Navigationsbereich "Portal"
+==== Navigationsbereich "Portal"
 
 Hier werden alle vefügbaren Verlinkungen zu anderen Seiten oder Anwendungen angezeigt, für die der Anwender mit seiner Rolle berechtigt ist.
 

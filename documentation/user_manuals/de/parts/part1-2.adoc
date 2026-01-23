@@ -1,4 +1,4 @@
-### 1.2 Assist Administration
+### Assist Administration
 
 Innerhalb der Assist Administration gibt es die Möglichkeit, alle Systemrelevanten Daten zentral zu verwalten. So können hier Benutzer und Rollen, 
 die Speicherordner der Dokumente (RAG), Konfigurationen der Schnittstellen, die Systemaufforderungen (Promps), LIzenzen und die systemseitig 
@@ -7,13 +7,13 @@ Der Zugriff auf diese Funktionen der Administration erfolgt über eine systemsei
 
 image::../images/Abbildung-15.jpg[Administration, title="Administration"]
 
-#### 1.2.1 Benutzerverwaltung
+#### Benutzerverwaltung
 
 Hier können Benutzer angelegt und bearbeitet werden. 
 
 image::../images/Abbildung-16.jpg[Administration - Benutzerverwaltung, title="Administration - Benutzerverwaltung"]
 
-##### 1.2.1.1 Benutzer bearbeiten
+##### Benutzer bearbeiten
 
 Beim Erstellen eines Benutzers muss ein systemweit eindeutiger Benutzername vergeben werden. Dieser wird bei der Anmeldung case sensitive verwendet. 
 Eine nachträgliche Änderung das Namen ist nicht möglich.
@@ -24,13 +24,13 @@ image::../images/Abbildung-17.jpg[Administration - Benutzerverwaltung - Benutzer
 
 Benutzer können nicht deaktiviert werden und nur in der Übersichtstabelle, nach einer bestätigten Sicherheitsabfrage, entfernt werden.
 
-#### 1.2.2 Rollenverwaltung
+#### Rollenverwaltung
 
 Hier können Rollen angelegt und bearbeitet werden. 
 
 image::../images/Abbildung-18.jpg[Administration - Rollenverwaltung, title="Administration - Rollenverwaltung"]
 
-##### 1.2.2.1 Rollen bearbeiten
+##### Rollen bearbeiten
 
 Beim Erstellen einer neuen Rolle muss ein systemweit eindeutiger Rollenname vergeben werden. Zu jeder Rolle kann eine Beschreibung angegeben werden. 
 Der Name und die Beschreibung können jederzeit wieder geändert werden.
@@ -40,7 +40,7 @@ image::../images/Abbildung-19.jpg[Administration - Rollenverwaltung - Rollen anl
 Rollen können nicht deaktiviert werden und nur in der Übersichtstabelle, nach einer bestätigten Sicherheitsabfrage, entfernt werden. 
 Die systemseitige erstellte Rollen können nicht gelöscht werden.
 
-#### 1.2.3 Ordnerverwaltung
+#### Ordnerverwaltung
 
 Hier können den systemseitig angelegten Ordnern die Rollen zugewiesen werden. Damit wird der Zugriff auf diese Ordner unter Navigationsbereich „Dokumente“ gesteuert.
 Ein Ordner entspricht in der Anwendung einem RAG (Retrieval Augmented Generation). Bei Retrieval Augmented Generation erweitert man den Prompt für das Large Language Model 
@@ -48,13 +48,13 @@ um die Suchergebnisse z.B. aus der Dokumentensammlung. Das Wissen für die Antwo
 
 image::../images/Abbildung-20.jpg[Administration - Ordnerverwaltung, title="Administration - Ordnerverwaltung"]
 
-#### 1.2.4 Systemaufforderung
+#### Systemaufforderung
 
 Hier werden textbasierte Anweisung oder Fragen als Aufforderungen (prompts) hinterlegt und beschrieben.
 
 image::../images/Abbildung-21.jpg[Administration - Systemaufforderungen, title="Administration - Systemaufforderungen"]
 
-#### 1.2.5.LLMs und Einbettungsmodelle 
+#### LLMs und Einbettungsmodelle 
 
 Hier werden die Provider gelistet und verwaltet.
 
@@ -68,7 +68,7 @@ image::../images/Abbildung-32.jpg[Administration - LLMs und Einbettungsmodelle -
 
 image::../images/Abbildung-24.jpg[Administration - LLMs und Einbettungsmodelle - Modelle bearbeiten, title="Administration - LLMs und Einbettungsmodelle - Modelle bearbeiten"]
 
-#### 1.2.6 Anwendungsfälle
+#### Anwendungsfälle
 
 Hier werden konkrete Anwendungsfälle bzw. Vorlagen dafür hinterlegt. Anwendungsfälle sind Templates als fertige Routinen wie Checklisten um wiederkehrende, Use Case organisierte Anfragen zu stellen. 
 Die Gruppierung der Anwendungsfälle ist systemseitig festgelegt und wird unter Navigationsbereich „Anwendungsfälle“ wieder verwendet.
@@ -77,7 +77,7 @@ image::../images/Abbildung-25.jpg[Navigationsbereich - Anwendungsfälle, title="
 
 Hinterlegte Vorlagen können deaktiviert werden. Das steuert die Sichtbarkeit/Verfügbarkeit unter Navigation „Anwendungsfälle“.
 
-#### 1.2.7 Lizenzverwaltung
+#### Lizenzverwaltung
 
 Hier kann die Lizenz verwaltet werden. Es besteht die Möglichkeit der Aktualisierung, wenn die vorhandene ausgetauscht wurde.
 Auch der Kontakt per Mail zum Assist Service ist von hier aus möglich
@@ -88,13 +88,12 @@ Es kann nach Auswahl eine gänzlich neue Lizenz hochgeladen werden.
 
 image::../images/Abbildung-31.jpg[Administration - Lizenzverwaltung - Lizenz laden, title="Administration - Lizenzverwaltung - Lizenz laden"]
 
-#### 1.2.8 Portal-Seite
+#### Portal-Seite
 
 Hier können verschiedene Verknüpfungen verwaltet werden. Es besteht die Möglichkeit zur Neuanlage, zum Löschen und Bearbeiten einzelner Einträge.
 Zusätzlich kann die gesamte Portalseite deaktiviert werden und diese ist dadurch nicht mehr in der Navigation verfügbar.
 
 image::../images/Abbildung-41.jpg[Administration - Portal-Seite, title="Administration - Portal-Seite"]
-
 
 Es können Seiten oder Applikationen verknüpft werden. Die Verknüpfung von Dokumenten auf Laufwerden oder Shares ist nicht möglich.
 

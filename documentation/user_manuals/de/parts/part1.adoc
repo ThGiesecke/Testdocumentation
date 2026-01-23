@@ -1,4 +1,4 @@
-== 1. Anwendungsbeschreibung 
+== Anwendungsbeschreibung 
 
 Es ist innerhalb von CGS Assist, im weiteren nur noch Assist genannt, möglich, KI-unterstütztes Unternehmenswissen in separaten Chats oder vorbereiteten Anwendungsfällen abzufragen und zu nutzen. 
 Dieses Wissen basiert, je nach Einstellung, auf den Inhalten der hinterlegten Dokumente oder einer Cloud.
