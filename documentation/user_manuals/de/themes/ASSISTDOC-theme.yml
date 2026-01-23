@@ -1,0 +1,72 @@
+extends: default
+title-page:
+  background-image: image:ASSISTDOC-TitlePage.png[]
+  title:
+    font-size: 38
+    font-color: '090909'
+    font-style: bold
+    align: center
+    top-margin: 10  # Abstand von oben in Punkten
+  subtitle:
+    font-size: 20
+    font-color: '94948d'
+    font-style: italic
+    align: left
+    top-margin: 20
+  author:
+    font-size: 16
+    font-color: '4F2F9C'
+    align: left
+    top-margin: 30
+  date:
+    font-size: 16
+    font-color: '4F2F9C'
+    align: left
+    top-margin: 40
+
+base:
+  font-color: '222222'
+  font-family: Noto Serif
+  page:
+    margin: [36, 36, 36, 36]
+
+toc:
+  title:
+    font-size: 
+    font-color: '224488'
+    align: left
+  column:
+    font-size: 12
+    font-color: '224488'
+
+heading:
+  h1:
+    font-size: 23
+    font-color: '3f6172'
+    font-style: italic
+  h2:
+    font-size: 20
+    font-color: '3f6172'
+    font-style: italic
+  h3:
+    font-size: 12
+    font-color: '3f6172'
+    font-style: italic
+  h4:
+    font-size: 10
+    font-color: '3f6172'
+    font-style: italic
+
+table:
+  border-color: 'EEEEEE'
+  head:
+    font-color: '3f6172'
+    background-color: 'ECECEC'
+    font-style: italic
+  body:
+    font-color: '222222'
+    
+chapter:
+  label: ''
+
+

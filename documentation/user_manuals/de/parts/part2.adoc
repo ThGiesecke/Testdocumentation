@@ -1,3 +1,5 @@
+image::logo.png[Firmenlogo,align=left,width=50]
+
 === Kontakt
 
 ifdef::cgs-assist[]
