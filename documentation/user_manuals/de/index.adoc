@@ -1,8 +1,8 @@
-//= Arc Assist: Anwenderhandbuch
-= CGS Assist: Anwenderhandbuch
+= Arc Assist: Anwenderhandbuch
+//= CGS Assist: Anwenderhandbuch
 :doctype: book
-//:author: arc
-:author: CGS GmbH
+:author: arc
+//:author: CGS GmbH
 :revdate: 2002-02-02
 :toc: left
 :toc-interactive: true // in pdf the active section will be highlighted
@@ -14,8 +14,8 @@
 :imagesdir: images
 :sectnums:
 :sectnumlevels: 7
-:cgs-assist: 1
-//:arc-assist: 1
+//:cgs-assist: 1
+:arc-assist: 1
 
 include::parts/part1.adoc[]
 
