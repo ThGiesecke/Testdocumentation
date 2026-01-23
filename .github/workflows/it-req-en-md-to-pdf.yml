@@ -1,4 +1,4 @@
-name: Export DE IT_REQUIREMENTS Markdown to PDF
+name: Export EN IT_REQUIREMENTS Markdown to PDF
 
 on:
   workflow_dispatch:
