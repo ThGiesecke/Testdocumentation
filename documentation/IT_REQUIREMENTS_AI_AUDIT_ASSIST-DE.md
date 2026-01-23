@@ -35,7 +35,7 @@ Die Bereitstellung erfolgt über **Docker Compose**.
 
 **Erforderliche Versionen:**
 
-- **Docker Engine:** Versiong größer 20.x
+- **Docker Engine:** Version größer 20.x
 - **Docker Compose:** Version größer 1.29 oder Compose V2
 
 **Installation:** Der Kunde muss Docker und Docker Compose auf dem Server installieren und konfigurieren.
@@ -80,11 +80,11 @@ Wenn Sie Caddy mit automatischen Let's Encrypt TLS-Zertifikaten verwenden möcht
 
 **Caddyfile-Konfiguration benötigt:**
 
-```
+``
 cgs-assist.ihrefirma.de {
     reverse_proxy cgs_assist_backend:8000
 }
-```
+``
 
 **Alternative DNS‑01 (öffentlich trusted, ohne Freigabe 80/443):**
 
@@ -92,7 +92,7 @@ Zertifikatsanfrage wird über DNS-Einträge verifiziert anstatt die Inhalte übe
 
 Beispiel Provider-Syntax Cloudflare Token als Env-Var:
 
-```
+``
 texttest.server.de {reverse_proxy cgs_assist_server:8000 {
 		header_up X-Forwarded-Proto {scheme}        
 		header_up X-Forwarded-Host {host}        
@@ -107,7 +107,7 @@ texttest.server.de {reverse_proxy cgs_assist_server:8000 {
 				# optional: resolvers 1.1.1.1 8.8.8.8
 				}
 		}
-```
+``
 
 **Wichtig:** in der Konfigurationsdatei des Caddy-Server muss das Plugin "caddy-dns" eingebunden werden, sonst wird "dns cloudflare" nicht gefunden.
 
@@ -115,13 +115,13 @@ Beispiel Eigenes Zertifikat (PEM + Key):
 
 Wenn ein Zertifikat existiert (z. B. von eurer Firmen‑PKI, oder manuell erzeugt), wird es direkt eingebunden:
 
-```
+``
 texttest.server.de {reverse_proxy cgs_assist_server:8000 header {
 	Strict-Transport-Security "max-age=31536000; includeSubDomains" -Server}    
 	# Zertifikat + Private Key (PEM)    
 	tls /etc/caddy/certs/test.server.de.fullchain.pem /etc/caddy/certs/test.server.de.key
 	}
-```
+``
 
 **Wichtig:** Die Zertifikatskette muss vollständig sein(typisch “fullchain”) und die SANs (Subject Alternative Names) müssen zum Hostnamen passen.
 
@@ -207,12 +207,12 @@ texttest.server.de {reverse_proxy cgs_assist_server:8000 header {
    - Deployment-Namen der Modelle
 
 **Beispiel:**
-```
+``
 Endpoint: https://cgs-assist-openai-prod.openai.azure.com/
 API Key: 1234567890abcdef...
 Region: westeurope
 Deployment Name: gpt-4o
-```
+``
 
 ### 2.3 Option B: AWS Bedrock (Gleichwertig unterstützt)
 
@@ -248,7 +248,7 @@ Deployment Name: gpt-4o
 
 Erstellen Sie einen IAM-User mit folgender Policy:
 
-```
+``
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -262,7 +262,7 @@ Erstellen Sie einen IAM-User mit folgender Policy:
     }
   ]
 }
-```
+``
 
 ##### Schritt 3: Access Keys generieren
 
@@ -275,12 +275,12 @@ Erstellen Sie einen IAM-User mit folgender Policy:
    - Model ID (z. B. `anthropic.claude-3-5-sonnet-20240620-v1:0`)
 
 **Beispiel:**
-```
+``
 AWS Access Key ID: AKIAIOSFODNN7EXAMPLE
 AWS Secret Access Key: wJalrXUtnFEMI/K7MDENG...
 AWS Region: eu-central-1
 Model ID: anthropic.claude-3-5-sonnet-20240620-v1:0
-```
+``
 
 ### 2.4 Option C: Lokale Modelle (für höchste Datenschutzanforderungen)
 
@@ -309,7 +309,7 @@ Die Plattform unterstützt lokale LLMs über **OpenAI-kompatible APIs**.
 
 **Setup-Beispiel mit Ollama:**
 
-```bash
+``bash
 # Ollama installieren
 curl -fsSL https://ollama.ai/install.sh | sh
 
@@ -317,7 +317,7 @@ curl -fsSL https://ollama.ai/install.sh | sh
 ollama pull llama3.1:70b
 
 # API läuft auf http://localhost:11434/v1 (OpenAI-kompatibel)
-```
+``
 
 ### 2.5 Token-Rate-Limits dimensionieren
 

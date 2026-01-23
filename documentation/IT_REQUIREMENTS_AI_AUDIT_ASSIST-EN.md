@@ -82,11 +82,11 @@ If you want to use Caddy with automatic Let’s Encrypt TLS certificates:
 
 **Caddyfile configuration example:**
 
-```
+``
 cgs-assist.yourcompany.com {
     reverse_proxy cgs_assist_backend:8000
 }
-```
+``
 
 **Alternative DNS-01 (publicly trusted, without open 80/443):**
 
@@ -94,7 +94,7 @@ Certificate requests are verified via DNS entries instead of HTTP content
 
 Provider syntax example, Cloudflare token as Env-Var:
 
-```
+``
 texttest.server.com {reverse_proxy cgs_assist_server:8000 {
         header_up X-Forwarded-Proto {scheme}        
         header_up X-Forwarded-Host {host}        
@@ -109,7 +109,7 @@ texttest.server.com {reverse_proxy cgs_assist_server:8000 {
                 # optional: resolvers 1.1.1.1 8.8.8.8
                 }
         }
-```
+``
 
 **Important:** The "caddy-dns" plugin must be included in the Caddy server's configuration, otherwise "dns cloudflare" will not be found.
 
@@ -117,13 +117,13 @@ Own certificate example (PEM + Key):
 
 If a certificate exists (e.g., from your company PKI or manually generated), integrate it directly:
 
-```
+``
 texttest.server.com {reverse_proxy cgs_assist_server:8000 header {
     Strict-Transport-Security "max-age=31536000; includeSubDomains" -Server}    
     # Certificate + Private Key (PEM)    
     tls /etc/caddy/certs/test.server.com.fullchain.pem /etc/caddy/certs/test.server.com.key
     }
-```
+``
 
 **Important:** The certificate chain must be complete (typically “fullchain”) and the SANs (Subject Alternative Names) must match the hostname.
 
@@ -206,12 +206,13 @@ Access only via IP address: http://<server-ip>:8000 (recommended only for testin
 - Model deployment names
 
 **Example:**
-```
+
+``
 Endpoint: https://cgs-assist-openai-prod.openai.azure.com/
 API Key: 1234567890abcdef...
 Region: westeurope
 Deployment Name: gpt-4o
-```
+``
 
 ### 2.3 Option B: AWS Bedrock (Equally Supported)
 
@@ -247,7 +248,7 @@ Deployment Name: gpt-4o
 
 Create an IAM user with the following policy:
 
-```
+``
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -261,7 +262,7 @@ Create an IAM user with the following policy:
     }
   ]
 }
-```
+``
 
 ##### Step 3: Generate access keys
 
@@ -275,12 +276,13 @@ IAM Console → Users → Your User → Security credentials
 - Model ID (e.g., anthropic.claude-3-5-sonnet-20240620-v1:0)
 
 **Example:**
-```
+
+``
 AWS Access Key ID: AKIAIOSFODNN7EXAMPLE
 AWS Secret Access Key: wJalrXUtnFEMI/K7MDENG...
 AWS Region: eu-central-1
 Model ID: anthropic.claude-3-5-sonnet-20240620-v1:0
-```
+``
 
 ##### 2.4 Option C: Local Models (for maximum data privacy)
 
@@ -307,7 +309,8 @@ The platform supports local LLMs via OpenAI-compatible APIs.
 |8B Models	|8–16 GB	|RTX 4060 Ti|16 GB	|
 
 **Setup example with Ollama:**
-```bash
+
+``bash
 # Install Ollama
 curl -fsSL https://ollama.ai/install.sh | sh
 
@@ -315,7 +318,7 @@ curl -fsSL https://ollama.ai/install.sh | sh
 ollama pull llama3.1:70b
 
 # API runs at http://localhost:11434/v1 (OpenAI-compatible)
-```
+``
 
 ### 2.5 Sizing Token Rate Limits
 
