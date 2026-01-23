@@ -2,17 +2,17 @@
 
 This document is intended for IT infrastructure and system administrators and describes the technical requirements for the deployment and operation of the AI Audit Assist platform at the customer’s premises.
 
-## ⚠️ IMPORTANT: LLM Deployment by the Customer
+## IMPORTANT: LLM Deployment by the Customer
 
 **The AI Audit Assist platform is delivered WITHOUT a built-in Large Language Model (LLM).**
 
 The customer must provide their own LLM provider. The following options are supported:
 
-| LLM Provider         | Status               | Recommendation                      |
-|----------------------|---------------------|-------------------------------------|
-| **Azure OpenAI**     | ✅ Fully supported   | **Recommended** for cloud deployments |
-| **AWS Bedrock**      | ✅ Fully supported   | Suitable for AWS customers          |
-| **Local Models**     | ✅ Supported         | For maximum data privacy requirements |
+| LLM Provider         | Status            | Recommendation                      |
+|----------------------|-------------------|-------------------------------------|
+| **Azure OpenAI**     | Fully supported   | **Recommended** for cloud deployments |
+| **AWS Bedrock**      | Fully supported   | Suitable for AWS customers          |
+| **Local Models**     | Supported         | For maximum data privacy requirements |
 
 **Note:** Azure OpenAI is our preferred recommendation, but AWS Bedrock and local models are equally supported.
 
@@ -75,9 +75,9 @@ A **writable directory** on the server for data exchange between containers and 
 
 If you want to use Caddy with automatic Let’s Encrypt TLS certificates:
 
-- ✅ **FQDN required:** Application must be reachable via a fully qualified domain name (e.g., `cgs-assist.yourcompany.com`)
-- ✅ **DNS resolution:** The FQDN must resolve to the public IP address of the server (A-record or CNAME)
-- ✅ **Port 80 accessible:** Must be reachable from the internet (for ACME HTTP challenge)
+- **FQDN required:** Application must be reachable via a fully qualified domain name (e.g., `cgs-assist.yourcompany.com`)
+- **DNS resolution:** The FQDN must resolve to the public IP address of the server (A-record or CNAME)
+- **Port 80 accessible:** Must be reachable from the internet (for ACME HTTP challenge)
 
 **Caddyfile configuration example:**
 
@@ -144,11 +144,11 @@ Access only via IP address: http://<server-ip>:8000 (recommended only for testin
 *IMPORTANT:* CGS Assist does **not provide an LLM**. The customer must set up and operate one of the following LLM providers.
 
 ### 2.1 Overview of Supported LLM Providers
-|Provider		|Recommendation			|Benefits											|Setup-Complexity	|
-|----- 			|----- 					|-----												|----				|	
-|Azure OpenAI	|⭐ Preferred			|Enterprise support, EU regions, easy integration	|	Medium			|
-|AWS Bedrock	|✅ Equally supported	|Excellent Claude models, AWS integration			|	Medium			|
-|Local Models	|✅ For high privacy	|Maximum data protection, no cloud					|	High (GPU required)|
+|Provider		|Recommendation		|Benefits											|Setup-Complexity	|
+|----- 			|----- 				|-----												|----				|	
+|Azure OpenAI	|Preferred			|Enterprise support, EU regions, easy integration	|	Medium			|
+|AWS Bedrock	|Equally supported	|Excellent Claude models, AWS integration			|	Medium			|
+|Local Models	|For high privacy	|Maximum data protection, no cloud					|	High (GPU required)|
 
 **Select a provider based on:**
 - Existing cloud infrastructure (Azure or AWS)
@@ -160,10 +160,10 @@ Access only via IP address: http://<server-ip>:8000 (recommended only for testin
 ### 2.2 Option A: Azure OpenAI (Recommended)
 
 **Why Azure OpenAI is recommended:**
-- ✅ Proven enterprise integration
-- ✅ EU-region availability (GDPR-compliant)
-- ✅ Microsoft enterprise support
-- ✅ Proven GPT models
+- Proven enterprise integration
+- EU-region availability (GDPR-compliant)
+- Microsoft enterprise support
+- Proven GPT models
 
 **Prerequisites:**
 - Active Azure subscription
@@ -217,10 +217,10 @@ Deployment Name: gpt-4o
 **AWS Bedrock is a full alternative to Azure OpenAI.**
 
 **Benefits:**
-- ✅ Excellent Claude models from Anthropic
-- ✅ Available in EU regions (Frankfurt, Ireland)
-- ✅ Good integration for AWS customers
-- ✅ Often less expensive than Azure OpenAI
+- Excellent Claude models from Anthropic
+- Available in EU regions (Frankfurt, Ireland)
+- Good integration for AWS customers
+- Often less expensive than Azure OpenAI
 
 **Prerequisites:**
 - Active AWS account
