@@ -93,3 +93,38 @@ hr {
   page-break-before: always;
   break-before: page;
 }
+
+/* Allgemeine Listeneinstellungen */
+ul, ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  padding-left: 0;
+  font-size: 1em;
+  line-height: 1.5;
+}
+ul {
+  list-style-type: disc; /* Standard-Punkte */
+}
+ol {
+  list-style-type: decimal; /* Zahlen */
+}
+li {
+  margin-bottom: .4em; /* Abstand zwischen Listeneinträgen */
+}
+ul ul, ol ul, ul ol, ol ol {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  margin-left: 1.5em;
+  font-size: 0.97em;
+}
+li p {
+  margin: 0.4em 0 0.4em 0;
+}
+/* Optional: Schönere Checkboxen für Tasklists */
+input[type="checkbox"] {
+  margin-right: 0.6em;
+  width: 1em;
+  height: 1em;
+  accent-color: #1A73E8;
+}

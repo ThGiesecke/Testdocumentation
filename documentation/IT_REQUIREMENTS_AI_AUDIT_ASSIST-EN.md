@@ -470,6 +470,7 @@ Mandatory for production. Certificates:
 |Security Patches (OS)	|Consult	|Responsible|
 
 ---
+<div class="pagebreak"></div>
 
 ## 11. FAQ
 
@@ -515,6 +516,7 @@ All application data is stored on the customer server. For cloud LLMs, requests 
 - Local: €0 API costs, but hardware investment required
 
 ---
+<div class="pagebreak"></div>
 
 ## 12. Checklist
 

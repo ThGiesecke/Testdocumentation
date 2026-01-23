@@ -151,8 +151,6 @@ texttest.server.de {reverse_proxy cgs_assist_server:8000 header {
 - Datenschutz- und Compliance-Anforderungen
 - Budget und Betriebsmodell
 
----
-
 ### 2.2 Option A: Azure OpenAI (Empfohlen)
 
 **Warum Azure OpenAI empfohlen wird:**
@@ -209,7 +207,6 @@ API Key: 1234567890abcdef...
 Region: westeurope
 Deployment Name: gpt-4o
 ```
----
 
 ### 2.3 Option B: AWS Bedrock (Gleichwertig unterstützt)
 
@@ -276,7 +273,6 @@ AWS Secret Access Key: wJalrXUtnFEMI/K7MDENG...
 AWS Region: eu-central-1
 Model ID: anthropic.claude-3-5-sonnet-20240620-v1:0
 ```
----
 
 ### 2.4 Option C: Lokale Modelle (für höchste Datenschutzanforderungen)
 
@@ -312,8 +308,6 @@ ollama pull llama3.1:70b
 # API läuft auf http://localhost:11434/v1 (OpenAI-kompatibel)
 ```
 
----
-
 ### 2.5 Token-Rate-Limits dimensionieren
 
 **Faustregeln für TPM (Tokens per Minute):**
@@ -329,8 +323,6 @@ ollama pull llama3.1:70b
 - **Azure OpenAI:** Token-Limits in Azure AI Foundry anpassen
 - **AWS Bedrock:** Service Quotas in AWS Console prüfen
 - **Lokale Modelle:** Ausreichende GPU-Kapazität bereitstellen
-
----
 
 ### 2.6 Kostenübersicht LLM-Provider
 
@@ -348,8 +340,6 @@ ollama pull llama3.1:70b
 - Keine API-Kosten
 - Hardware-Investment: €5.000-50.000+
 - Laufende Stromkosten
-
----
 
 ## 3. Serveranforderungen 
 
@@ -382,8 +372,6 @@ ollama pull llama3.1:70b
 
 **Hinweis bei lokalen LLMs:** Die oben genannten Anforderungen gelten für die Anwendung. Lokale LLM-Server benötigen **zusätzliche** GPU-Hardware (siehe Abschnitt 2.4).
 
----
-
 ## 4. Systemkomponenten 
 
 Die Lösung besteht aus folgenden Docker-Containern:
@@ -396,8 +384,6 @@ Die Lösung besteht aus folgenden Docker-Containern:
 
 **Deployment:** Über Docker Compose auf Linux-Server.
 
----
-
 ## 5. Datenbank und Storage 
 
 **Datenhaltung:**
@@ -407,15 +393,11 @@ Die Lösung besteht aus folgenden Docker-Containern:
 
 **Alle Daten liegen auf dem Kundenserver.**
 
----
-
 ## 6. Authentifizierung 
 
 - Lokale Benutzer-/Passwortverwaltung
 - Azure AD/Entra (OIDC/SAML)
 - API-Token für Integrationen
-
----
 
 ## 7. Security und Compliance 
 
@@ -445,8 +427,6 @@ Obligatorisch für Produktion. Zertifikate:
 
 **Lokale Modelle:** Höchste DSGVO-Konformität
 
----
-
 ## 8. Backup und Recovery 
 
 **Vom Kunden zu sichern:**
@@ -454,14 +434,10 @@ Obligatorisch für Produktion. Zertifikate:
 - SHARED_FOLDER 
 - Konfigurationsdateien
 
----
-
 ## 9. Patch-Management 
 
 - **Anwendung:** CGS stellt Updates bereit → Kunde spielt ein
 - **Infrastruktur:** Kunde verantwortlich (OS, Docker)
-
----
 
 ## 10. RACI-Matrix 
 
@@ -475,8 +451,6 @@ Obligatorisch für Produktion. Zertifikate:
 | **Backups** | Consult | Responsible |
 | **Applikations-Updates** | Responsible | Accountable |
 | **Security-Patches (OS)** | Consult | Responsible |
-
----
 
 <div class="pagebreak"></div>
 
@@ -523,8 +497,6 @@ Alle Anwendungsdaten auf Kundenserver. Bei Cloud-LLMs werden Anfragen zur Analys
 - AWS Bedrock: $80-400/Monat (50 Nutzer)
 - Lokal: €0 API-Kosten, aber Hardware-Investment
 
----
-
 <div class="pagebreak"></div>
 
 ## 12. Checkliste 
@@ -557,7 +529,6 @@ Alle Anwendungsdaten auf Kundenserver. Bei Cloud-LLMs werden Anfragen zur Analys
 - [ ] DNS konfiguriert (für Caddy)
 - [ ] Ausgehende Verbindungen freigegeben
 
----
 
 **Version:** 2.0  
 **Stand:** Januar 2026  
