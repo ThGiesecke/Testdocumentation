@@ -18,7 +18,7 @@
 :arc-assist: 1
 
 
-= ARC Assist Anwenderhandbuch
+//= ARC Assist Anwenderhandbuch
 // = CGS Assist Anwenderhandbuch
 
 include::parts/part1.adoc[]

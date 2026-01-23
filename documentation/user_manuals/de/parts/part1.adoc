@@ -6,7 +6,13 @@ Alle Chatverläufe und Use Case Verläufe werden gespeichert und können auch na
 Bestimmte regelmäßige Anwendungsfälle werden im Assist als Templates verwaltet, um Routinen zu vereinfachen. Die Anwendungsfälle sind mit Use Cases wie eine Art Checkliste erstellt.
 Es können bei entsprechender Berechtigung, automatisierte, zeitgesteurte Abfragen auf automatisierte bereitgestellte Informationsquellen, sogenannte Feeds erstellt werden.
 
+ifdef::cgs-assist[]
 image::../images/cgs-Abbildung-start.jpg[CGS Assist,title="CGS Assist"]
+endif::cgs-assist[]
+
+ifdef::arc-assist[]
+image::../images/arc-Abbildung-start.jpg[Arc Assist,title="Arc Assist"]
+endif::arc-assist[]
 
 Über eine Navigation am oberen Rand sind die thematisierten Navigationsbereiche erreichbar.
 Je nach Berechtigungen des Anwenders können die Anzahl der Einträge bzw. das Design varieren.
