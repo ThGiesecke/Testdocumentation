@@ -91,10 +91,18 @@ Im oberen Bereich befinden sich Filter- um die Anzahl zu begrenzen und Sortierun
 Über Icon können Dokumente und somit die Inhalte des RAG bearbeitet werden werden.
 
 |===
-|image::../images/Abbildung-34.jpg[Dokument herunterladen, title=""]  | Dokument herunterladen   | 
-|image::../images/Abbildung-35.jpg[Embeddings laden]		| Embeddings laden (einzeln nachladen)   | 
-|image::../images/Abbildung-36.jpg[Aus RAG-System ((Retrieval Augmented Generation)) entfernen (Dokument bleibt in der Ordnerstruktur gespeichert)] | Aus RAG-System ((Retrieval Augmented Generation)) entfernen (Dokument bleibt in der Ordnerstruktur gespeichert)   | 
-|image::../images/Abbildung-37.jpg[Dokument endgültig löschen] | Dokument endgültig löschen   | 
+|
+image::../images/Abbildung-34.jpg[Dokument herunterladen, title=""]  
+| Dokument herunterladen   | 
+|
+image::../images/Abbildung-35.jpg[Embeddings laden]		
+| Embeddings laden (einzeln nachladen)   | 
+|
+image::../images/Abbildung-36.jpg[Aus RAG-System ((Retrieval Augmented Generation)) entfernen (Dokument bleibt in der Ordnerstruktur gespeichert)] 
+| Aus RAG-System ((Retrieval Augmented Generation)) entfernen (Dokument bleibt in der Ordnerstruktur gespeichert)   | 
+|
+image::../images/Abbildung-37.jpg[Dokument endgültig löschen] 
+| Dokument endgültig löschen   | 
 |===
 
 Über einen Klick auf das Symbol vor der Dokument, können die Teildokumente angezeigt werden.
