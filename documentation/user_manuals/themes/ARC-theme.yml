@@ -1,6 +1,5 @@
 extends: default
 title-page:
-  background-image: image:ASSISTDOC-TitlePage.png[]
   title:
     font-size: 38
     font-color: '090909'
@@ -23,6 +22,8 @@ title-page:
     font-color: '4F2F9C'
     align: left
     top-margin: 40
+  logo:
+    image: image:arc-logo.png
 
 base:
   font-color: '222222'
