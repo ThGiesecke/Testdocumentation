@@ -1,6 +1,6 @@
 # CGS Assist – Technische Bereitstellungsanforderungen
 
-Dieses Dokument richtet sich an IT-Infrastruktur und Systemadministratoren und beschreibt die technischen Voraussetzungen für die Bereitstellung und den Betrieb der AI Audit Assist Plattform beim Kunden.
+Dieses Dokument richtet sich an IT-Infrastruktur und Systemadministratoren und beschreibt die technischen Voraussetzungen für die Bereitstellung und den Betrieb der CGS Assist Plattform beim Kunden.
 
 ## WICHTIG: LLM-Bereitstellung durch den Kunden
 
