@@ -1,6 +1,6 @@
 extends: default
 title-page:
-    background-image: image:ARC-TitlePage.png[]
+  background-image: image:ARC-TitlePage.png[]
   title:
     font-size: 38
     font-color: '090909'
