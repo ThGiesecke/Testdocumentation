@@ -33,4 +33,8 @@ image::../images/Abbildung-2.jpg[Navigationsbereich - Baumnavigation, title="Nav
 Zusätzlich kann über ein Symbol am rechten oberen Rand die Auswahl der Sprache innerhalb der Anwendung getroffen werden und die Ansicht in den Dark Mode, bzw. wieder zurück, gewechselt werden. 
 Auch kann das Profil eingesehen werden bzw. eine Änderung des persönlichen Passwortes ist möglich.
 
-image::../images/Abbildung-3.jpg[Sprachwechsel und Darkmode, title=Sprachwechsel und Darkmode"]
+image::../images/Abbildung-3.jpg[Sprachwechsel und Darkmode, title="Sprachwechsel und Darkmode"]
+
+Innerhalb der gesamtem Anwendung werden beim Erstellen oder Speichern in der oberen linken Ecke farbige Hinweidialoge mit Statusanzeige dargestellt.
+
+image::../images/Abbildung-confirm.jpg[Hinweise, title="Hinweise"]
