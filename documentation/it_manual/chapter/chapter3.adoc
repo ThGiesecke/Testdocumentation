@@ -2,7 +2,14 @@
 
 ==== Installationsanleitung (Schritt-für-Schritt)
 
-Die Installation von "Kundenmanager Pro" erfolgt in folgenden Schritten:
+Die Installation von 
+ifdef::cgs-assist[] 
+{cgs-application}
+endif::cgs-assist[]
+ifdef::arc-assist[]
+{arc-application}
+endif::arc-assist[]
+ erfolgt in folgenden Schritten:
 
 1. Vorbereitungen 
  

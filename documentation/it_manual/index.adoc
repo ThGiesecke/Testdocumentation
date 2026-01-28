@@ -12,6 +12,7 @@ endif::arc-assist[]
 //:author: arc
 :author: CGS GmbH
 :revdate: 2002-02-02
+:revnumber: Version 1.0
 :toc: left
 :toc-interactive: true // in pdf the active section will be highlighted
 :toc-mode: offcanvas

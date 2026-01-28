@@ -4,12 +4,12 @@
 
 Die in diesem Handbuch beschriebene Anwendung trägt den Namen 
 ifdef::cgs-assist[] 
-CGS Assist
+{cgs-application}
 endif::cgs-assist[]
 ifdef::arc-assist[]
-Arc Assist
+{arc-application}
 endif::arc-assist[]
- und liegt in der aktuellen Version vor.
+ und liegt in der aktuellen Version {revnumber} vom {revdate} vor.
 
 ==== Übersicht und Funktionen
 

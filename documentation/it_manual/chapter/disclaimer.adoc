@@ -1,16 +1,19 @@
 ifdef::cgs-assist[]
-image::../../themes/cgs-logo.png[Firmenlogo,align=left,width=60]
+image::../../../themes/cgs-logo.png[Firmenlogo,align=left,width=60]
 endif::cgs-assist[]
 
 ifdef::arc-assist[]
-image::../../themes/arc_logo_gross.png[Firmenlogo,align=left,width=60]
+image::../../../themes/arc_logo_gross.png[Firmenlogo,align=left,width=60]
 endif::arc-assist[]
 
 ifdef::cgs-assist[]
 
 === Ihr Partner für Künstliche Intelligenz 
 
-Die CGS mbH besitzt jahrzehntelange Erfahrung in der Entwicklung, Implementierung und Betreuung komplexer Softwaresysteme. Mit unseren KI-Experten bieten wir Ihnen neben dem CGS Assist auch gerne KI-Beratung und Unterstützung bei der Entwicklung oder Integration von KI-Systemen. 
+Die CGS mbH besitzt jahrzehntelange Erfahrung in der Entwicklung, Implementierung und Betreuung komplexer Softwaresysteme. 
+Mit unseren KI-Experten bieten wir Ihnen neben dem 
+{cgs-application} 
+auch gerne KI-Beratung und Unterstützung bei der Entwicklung oder Integration von KI-Systemen. 
 
 *CGS mbH - Consulting Gesellschaft für Systementwicklung* 
 
@@ -38,6 +41,10 @@ endif::cgs-assist[]
 ifdef::cgs-assist[]
 
 *Unternehmen* 
+
+Mit unseren KI-Experten bieten wir Ihnen neben dem 
+{arc-application} 
+auch gerne KI-Beratung und Unterstützung bei der Entwicklung oder Integration von KI-Systemen.
 
 Eine Straße 1 
 
