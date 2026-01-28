@@ -10,32 +10,76 @@ ifdef::arc-assist[]
 {arc-application}
 endif::arc-assist[]
  gelten folgende Mindestanforderungen:
-- Server: 
-  - 4 CPU-Kerne (mindestens 2,5 GHz)
-  - 16 GB RAM
-  - 500 GB freier Festplattenspeicher (SSD empfohlen)
-  - Gigabit-Netzwerkanschluss
-- Client-Arbeitsplätze:
-  - 2 CPU-Kerne
-  - 8 GB RAM
-  - 5 GB freier Speicherplatz
-  - Bildschirmauflösung mind. 1920x1080 Pixel
+ 
+===== Entry Level (RAG, 8 GB RAM)
+
+Für kleinere Datenmengen und geringe bis moderate Nutzerzahlen:
+* Dokumentensammlung bis ca. 100 MB
+* Geringe bis moderate gleichzeitige Nutzer
+
+|===
+| *Arbeitsspeicher (vRAM)*	| 8 GB
+| *Prozessor (vCPU)*		| 4 vCPUs
+| *Speicher*				| 250 GB SSD (virtueller NVMe/SSD-Speicher)
+|===
+
+===== Mid-Tier Level (RAG, 32 GB RAM)
+
+Für wachsende Datenmengen und höhere Nutzerzahlen:
+* Dokumentensammlung bis ca. 5 GB
+* Moderate bis hohe gleichzeitige Nutzerzahlen
+
+|===
+| *Arbeitsspeicher (vRAM)*	| 32 GB
+| *Prozessor (vCPU)*		| 8-12 vCPUs
+| *Speicher*				| 1 TB SSD (virtueller NVMe/SSD-Speicher)
+|===
+
+===== High-End Level (RAG, 64 GB RAM)
+
+Für große Datenmengen, hohe Nutzerzahlen oder rechenintensive Aufgaben:
+* Dokumentensammlung über 5 GB
+* Viele gleichzeitige Nutzer bzw. komplexe, rechenintensive Abfragen
+
+|===
+| *Arbeitsspeicher (vRAM)*	| 64 GB
+| *Prozessor (vCPU)*		| 16-32 vCPUs
+| *Speicher*				| 2 TB SSD (virtueller NVMe/SSD-Speicher)
+|===
 
 ==== Softwarevoraussetzungen (Betriebssystem, Laufzeitumgebungen)
 
-- Server-Betriebssystem: Microsoft Windows Server 2019 oder höher (alternativ: Ubuntu Server 22.04 LTS)
-- Datenbank: Microsoft SQL Server 2019 oder PostgreSQL 13
-- Webserver: IIS 10.0 (bei Windows) oder Apache 2.4 (bei Linux)
-- Laufzeitumgebungen: .NET 6.0 Runtime (bei Windows), OpenJDK 17 (bei Linux)
-- Clients: Windows 10/11 oder macOS 12 oder höher, aktueller Chrome- oder Firefox-Browser
+|===
+| *Infrastruktur (VM oder Server)*				| Linux-basierter Server (lokale VM oder Cloud-VM)
+| *Betriebssystem*								| Linux, z. B. Ubuntu oder vergleichbare Distributionen.
+| *Docker-Umgebung*								| Docker Engine: Version ≥ 20.x 
+|												| Docker Compose: Version ≥ 1.29 oder Compose V2
+| *CPU, RAM, Speicher*							| Abhängig von der Größe der Dokumentensammlung und der Zahl der Benutzer (siehe Punkt 3).
+| *Gemeinsames Verzeichnis* *(SHARED_FOLDER)*	| Ein beschreibbares Verzeichnis auf dem Server für den Datenaustausch.
+| *Internetzugang / Proxy*						| Download der Docker-Images
+|												| Verbindung zur Azure OpenAI API
+|												| Proxy-Unterstützung ist möglich
+| *Netzwerk / Ports*							| Standardzugang: Port 8000 (bei Bedarf anpassbar).
+|===
 
 ==== Notwendige Drittanbieter-Komponenten
 
 Folgende Drittanbieter-Komponenten sind für den störungsfreien Betrieb erforderlich und müssen vor der Installation bereitgestellt werden:
 
-- Crystal Reports Runtime 13 für die Berichtsfunktion
-- SMTP-Mailserver für den E-Mail-Versand
-- Antivirus-Software mit Ausnahme für Installationsverzeichnis und Datenbankport
-- Optional: ElasticSearch (ab Version 7.17) für erweiterte Suchfunktionen
+**WICHTIG:** CGS Assist stellt **kein LLM** bereit. Der Kunde muss einen der folgenden LLM-Provider selbst einrichten und betreiben.
+
+*Übersicht der unterstützten LLM-Provider*
+
+| Provider | Empfehlung | Vorteile | Setup-Aufwand |
+|----------|------------|----------|---------------|
+| **Azure OpenAI** |  **Bevorzugt** | Enterprise-Support, EU-Regionen, einfache Integration | Mittel |
+| **AWS Bedrock** |  Gleichwertig | Gute Claude-Modelle, AWS-Integration | Mittel |
+| **Lokale Modelle** |  Für hohe Datenschutzanforderungen | Maximaler Datenschutz, keine Cloud | Hoch (GPU-Hardware erforderlich) |
+
+**Wählen Sie einen Provider basierend auf:**
+
+- Vorhandener Cloud-Infrastruktur (Azure oder AWS)
+- Datenschutz- und Compliance-Anforderungen
+- Budget und Betriebsmodell
 
 Der Bezug und die Wartung der Drittanbieter-Komponenten liegen im Verantwortungsbereich der IT-Abteilung.

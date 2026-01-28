@@ -13,22 +13,42 @@ endif::arc-assist[]
 
 ==== Übersicht und Funktionen
 
-Der 
+*
 ifdef::cgs-assist[] 
 {cgs-application}
 endif::cgs-assist[]
 ifdef::arc-assist[]
 {arc-application}
 endif::arc-assist[]
- ist eine zentrale Softwarelösung zur Verwaltung und Pflege von Kundendaten im gesamten Unternehmen. Zu den Hauptfunktionen gehören:
-- Erfassung, Bearbeitung und Löschung von Kundendatensätzen
-- Verwaltung von Kontakten und Kommunikationshistorie
-- Erstellen von Berichten und Auswertungen zu Kundenbeziehungen
-- Anbindung an das zentrale E-Mail-System und das Dokumentenmanagement
-- Import und Export von Daten im CSV- und XLSX-Format
-- Benutzer- und Rechteverwaltung
+* ist eine *browserbasierte Webanwendung*, die lokal beim Kunden gehostet wird. 
+Der Betrieb erfolgt in *Docker-Containern* auf einem *Linux-Server* (entweder *on-premise* oder in einer *Cloud-VM*). 
+Die Anwendung dient zur Nutzung von KI-Sprachmodellen (Large Language Models, LLMs), welche über eine externe API angebunden werden, u. a. Azure OpenAI. 
+Mit *
+ifdef::cgs-assist[] 
+{cgs-application}
+endif::cgs-assist[]
+ifdef::arc-assist[]
+{arc-application}
+endif::arc-assist[]
+* können Nutzer effizient Dokumente analysieren, Abfragen stellen und Daten verarbeiten, basierend auf KI-Technologien.
 
-Die Anwendung ist als Web-Applikation konzipiert und ermöglicht autorisierten Nutzern den standortübergreifenden Zugriff im Intranet.
+*
+ifdef::cgs-assist[] 
+{cgs-application}
+endif::cgs-assist[]
+ifdef::arc-assist[]
+{arc-application}
+endif::arc-assist[]
+* wird ohne eigene(s) KI-Sprachmodell(e) ausgeliefert. Stattdessen greift das Tool über eine API-Anbindung auf 
+die *LLM-Infrastruktur des Kunden* zurück. Damit *
+ifdef::cgs-assist[] 
+{cgs-application}
+endif::cgs-assist[]
+ifdef::arc-assist[]
+{arc-application}
+endif::arc-assist[]
+* ein Sprachmodell nutzen kann, muss eine funktionsfähige Anbindung 
+an ein unterstütztes LLM eingerichtet werden.
 
 ==== Lizenzinformationen
 
@@ -48,6 +68,6 @@ Arc
 endif::arc-assist[]
  verwendet. 
 Die Lizenz entspricht dem Modell "Concurrent User" für bis zu 100 gleichzeitige Nutzer. 
-Wartungs- und Update-Leistungen sind während der vertraglich vereinbarten Laufzeit enthalten (Lizenznummer: KM-2024-00123).  
+Wartungs- und Update-Leistungen sind während der vertraglich vereinbarten Laufzeit enthalten.  
 Die Lizenzbedingungen sind im Vertrag mit dem Hersteller und in den unternehmenseigenen IT-Richtlinien hinterlegt. 
 Die Einhaltung der Lizenzbedingungen wird regelmäßig durch die IT-Abteilung geprüft.

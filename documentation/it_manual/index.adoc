@@ -7,12 +7,12 @@ image::../../themes/arc_logo_gross.png[Firmenlogo,align=left,width=60]
 endif::arc-assist[]
 
 //= Arc Assist: IT-Handbuch
-= CGS Assist: IT-Handbuch
+= CGS Assist: KI-Plattform für den Mittelstand - IT-Handbuch
 :doctype: book
 //:author: arc
 :author: CGS GmbH
-:revdate: 2002-02-02
-:revnumber: Version 1.0
+:revdate: 02.02.2026
+:revnumber: 1.0
 :toc: left
 :toc-interactive: true // in pdf the active section will be highlighted
 :toc-mode: offcanvas
@@ -43,7 +43,6 @@ include::chapter/chapter5.adoc[]
 include::chapter/chapter6.adoc[]
 
 include::chapter/chapter7.adoc[]
-
 
 include::chapter/chapter8.adoc[]
 
