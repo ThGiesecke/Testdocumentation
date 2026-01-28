@@ -14,6 +14,7 @@ endif::arc-assist[]
 ===== Entry Level (RAG, 8 GB RAM)
 
 Für kleinere Datenmengen und geringe bis moderate Nutzerzahlen:
+
 * Dokumentensammlung bis ca. 100 MB
 * Geringe bis moderate gleichzeitige Nutzer
 
@@ -26,6 +27,7 @@ Für kleinere Datenmengen und geringe bis moderate Nutzerzahlen:
 ===== Mid-Tier Level (RAG, 32 GB RAM)
 
 Für wachsende Datenmengen und höhere Nutzerzahlen:
+
 * Dokumentensammlung bis ca. 5 GB
 * Moderate bis hohe gleichzeitige Nutzerzahlen
 
@@ -38,6 +40,7 @@ Für wachsende Datenmengen und höhere Nutzerzahlen:
 ===== High-End Level (RAG, 64 GB RAM)
 
 Für große Datenmengen, hohe Nutzerzahlen oder rechenintensive Aufgaben:
+
 * Dokumentensammlung über 5 GB
 * Viele gleichzeitige Nutzer bzw. komplexe, rechenintensive Abfragen
 
@@ -70,11 +73,24 @@ Folgende Drittanbieter-Komponenten sind für den störungsfreien Betrieb erforde
 
 *Übersicht der unterstützten LLM-Provider*
 
-| Provider | Empfehlung | Vorteile | Setup-Aufwand |
-|----------|------------|----------|---------------|
-| **Azure OpenAI** |  **Bevorzugt** | Enterprise-Support, EU-Regionen, einfache Integration | Mittel |
-| **AWS Bedrock** |  Gleichwertig | Gute Claude-Modelle, AWS-Integration | Mittel |
-| **Lokale Modelle** |  Für hohe Datenschutzanforderungen | Maximaler Datenschutz, keine Cloud | Hoch (GPU-Hardware erforderlich) |
+|===
+| Provider | Empfehlung | Vorteile | Setup-Aufwand
+
+| **Azure OpenAI** 
+| **Bevorzugt** 
+| Enterprise-Support, EU-Regionen, einfache Integration 
+| Mittel
+
+| **AWS Bedrock** 
+| Gleichwertig  
+| Gute Claude-Modelle, AWS-Integration  
+| Mittel
+
+| **Lokale Modelle** 
+| Für hohe Datenschutzanforderungen  
+| Maximaler Datenschutz, keine Cloud  
+| Hoch (GPU-Hardware erforderlich) 
+|===
 
 **Wählen Sie einen Provider basierend auf:**
 

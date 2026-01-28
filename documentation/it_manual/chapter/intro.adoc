@@ -66,6 +66,7 @@ endif::arc-assist[]
 verantwortlich sind.
 
 Darüber hinaus dient es als Nachschlagewerk für
+
 - IT-Sicherheitsbeauftragte,
 - Mitarbeitende im IT-Support,
 - berechtigte externe Dienstleister, die im Rahmen von Wartung oder Support die Applikation betreuen.
@@ -83,7 +84,7 @@ endif::cgs-assist[]
 ifdef::arc-assist[]
 {arc-application}
 endif::arc-assist[]
-: Die in diesem Handbuch behandelte Softwarelösung zur [kurze Funktionsbeschreibung, z. B. Verwaltung von Kundendaten].
+: Die in diesem Handbuch behandelte KI-Plattform für den Mittelstand.
 - Admin: IT-Administrator mit erweiterten Zugriffsrechten auf die Anwendung und zugehörige Systeme.
 - User: Allgemeiner Benutzer der Anwendung mit eingeschränkten Rechten.
 - Produktivsystem (Prod): Die Umgebung, in der die Anwendung für den realen Geschäftsbetrieb eingesetzt wird.

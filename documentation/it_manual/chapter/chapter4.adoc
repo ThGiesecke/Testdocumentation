@@ -51,24 +51,9 @@ Die Schnittstellen werden regelmäßig auf ihre Funktionsfähigkeit geprüft und
 
 ==== Backup und Recovery der Applikation
 
-Die Applikation wird täglich automatisiert gesichert:
-
-- Tägliches Vollbackup der Datenbank um 2:00 Uhr nachts auf das gesicherte Backup-Laufwerk
-- Wöchentliches Backup der Anwendungsdateien
-- Monatliche Überprüfung auf Restore-Fähigkeit durch Rücksicherung in eine Testumgebung
-
-Wiederherstellung (Recovery):
-
-- Auswahl der letzten konsistenten Datensicherung
-- Rückspielen der Datenbank auf den Stand vor dem Fehler
-- Kopieren der erforderlichen Applikationsdateien
-- Funktionstest und Freigabe durch die IT-Abteilung
+Backup und Recovery der Applikation erfolgt durch das Unternehmen
 
 ==== Überwachung/Monitoring
 
-Das Monitoring erfolgt mittels zentralem Überwachungstool (z. B. PRTG, Nagios):
-- Überwachung der Erreichbarkeit und Auslastung des Webservers und der Datenbank
-- Benachrichtigung bei kritischen Ereignissen (z. B. Systemfehler, Speicherprobleme, Ausfall der Schnittstellen)
-- Regelmäßige Auswertung der Logfiles auf sicherheitsrelevante Vorfälle
-- Bei Störungen wird automatisch ein Incident im Ticketsystem erzeugt und das IT-Team alarmiert
+Überwachung/Monitoring erfolgt durch das Unternehmen
 
