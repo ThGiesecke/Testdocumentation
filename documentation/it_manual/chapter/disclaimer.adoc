@@ -38,7 +38,7 @@ Mobil (+49) 177 / 792 8366
 
 endif::cgs-assist[]
 
-ifdef::cgs-assist[]
+ifdef::arc-assist[]
 
 *Unternehmen* 
 
@@ -57,4 +57,4 @@ Eine Straße 1
 1111 Stadt
 
 
-endif::cgs-assist[]
+endif::arc-assist[]

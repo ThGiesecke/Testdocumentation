@@ -59,7 +59,7 @@ Der Update- und Upgrade-Prozess gestaltet sich wie folgt:
 - Stoppen Sie den Applikationsdienst bzw. setzen Sie die Anwendung in den Wartungsmodus.
 - Ersetzen Sie die Anwendungsdateien durch die neue Version gemäß Updateanleitung.
 - Führen Sie ggf. erforderliche Migrationsschritte für die Datenbank durch (siehe Update-Guide des Herstellers).
-- Starten Sie die Anwendung neu und prüfen Sie die korrekte Funktion in der Testumgebung.
+- Starten Sie die Anwendung neu und prüfen Sie die korrekte Funktion.
 - Dokumentieren Sie den erfolgten Update-Vorgang und die Versionsnummer im Änderungsprotokoll.
 
 Nach Abschluss des Updates ist das Benutzerumfeld zu informieren und bei Bedarf eine Kurzanleitung zu veröffentlichen.
