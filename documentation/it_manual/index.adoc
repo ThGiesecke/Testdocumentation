@@ -6,11 +6,11 @@ ifdef::arc-assist[]
 image::themes/arc_logo_gross.png[Firmenlogo,align=left,width=60]
 endif::arc-assist[]
 
-//= Arc Assist: IT-Handbuch
-= CGS Assist: KI-Plattform für den Mittelstand - IT-Handbuch
+= Arc Assist: IT-Handbuch
+//= CGS Assist: KI-Plattform für den Mittelstand - IT-Handbuch
 :doctype: book
-//:author: arc
-:author: CGS GmbH
+:author: arc
+//:author: CGS GmbH
 :revdate: 02.02.2026
 :revnumber: 1.0
 :toc: left
@@ -23,10 +23,10 @@ endif::arc-assist[]
 :imagesdir: image
 :sectnums:
 :sectnumlevels: 7
-:cgs-assist: 1
-//:arc-assist: 1
+//:cgs-assist: 1
+:arc-assist: 1
 :arc-application: "Arc Assist"
-:cgs-application: "CGS Assist"
+//:cgs-application: "CGS Assist"
 //:only-for-concret-customer: 1
 
 include::chapter/intro.adoc[]
