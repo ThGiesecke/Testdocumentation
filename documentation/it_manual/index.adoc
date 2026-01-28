@@ -27,6 +27,7 @@ endif::arc-assist[]
 //:arc-assist: 1
 :arc-application: "Arc Assist"
 :cgs-application: "CGS Assist"
+:only-for-concret-customer: 1
 
 include::chapter/intro.adoc[]
 
@@ -36,19 +37,23 @@ include::chapter/chapter2.adoc[]
 
 include::chapter/chapter3.adoc[]
 
+ifdef::only-for-concret-customer[]
 include::chapter/chapter4.adoc[]
+endif::only-for-concret-customer[]
 
 include::chapter/chapter5.adoc[]
 
 include::chapter/chapter6.adoc[]
 
+ifdef::only-for-concret-customer[]
 include::chapter/chapter7.adoc[]
+endif::only-for-concret-customer[]
 
+ifdef::only-for-concret-customer[]
 include::chapter/chapter8.adoc[]
+endif::only-for-concret-customer[]
 
 include::chapter/chapter9.adoc[]
-
-include::chapter/chapter10.adoc[]
 
 <<<
 

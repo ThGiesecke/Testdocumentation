@@ -8,6 +8,7 @@ Change these places from "CGS Assist" to "Arc Assist" or back
 		<li> line 6 and 10 (title on cover) </li>
 		<li> line between 12 and 15 (Variablen für author, revdate, revnumber)</li>
 		<li> line 28 and 29 arc-application/cgs-application (Variablen to change places of application name in files)</li>
+		<li> line 30 only-for-concret-customer (variable to exclude some chapters)</li>
     </ul>
 	<li> github action "asciidoc-it-handbook-de.yml"</li>
       <ul>
