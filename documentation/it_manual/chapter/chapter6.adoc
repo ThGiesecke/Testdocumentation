@@ -55,9 +55,9 @@
 *Supportprozess:*
 
 |===
-|Level 1|Kunden-Support|Reaktion an Arbeitstagen `<` 24 h|
-|Level 2|Technische Teams| 
-|Level 3|Entwicklungs-Teams|
+|Level 1|Kunden-Support		|Reaktion an Arbeitstagen `<` 24 h
+|Level 2|Technische Teams	| 
+|Level 3|Entwicklungs-Teams	|
 |===
 
 *Kontaktinformationen:*
@@ -65,10 +65,10 @@
 ifdef::cgs-assist[] 
 
 |===
-|Firma|{author}
-|Website|https://www.cgs-online.de/| 
-|Support-Email|support@cgs-online.de|
-|Telefon|Support-Telefonnummer|
+|Firma			|{author}
+|Website		|https://www.cgs-online.de/
+|Support-Email	|support@cgs-online.de
+|Telefon		|Support-Telefonnummer
 |===
 
 endif::cgs-assist[]
@@ -77,9 +77,9 @@ ifdef::arc-assist[]
 
 |===
 |Firma|{author}
-|Website|?????| 
-|Support-Email|???????|
-|Telefon|???????|
+|Website|?????
+|Support-Email|???????
+|Telefon|???????
 |===
 
 endif::arc-assist[]
@@ -89,14 +89,14 @@ endif::arc-assist[]
 |===
 | *Bereich* |  *{author}* | *Kunde*
 
-| Infrastruktur | Consult | Responsible 
-| Docker Images | Responsible | Informed 
-| LLM-Provider Setup | Consult | Responsible 
-| LLM-Provider Kosten | Informed | Accountable 
-| Datenbank | Consult | Responsible 
-| Backups | Consult | Responsible 
-| Applikations-Updates| Responsible | Accountable 
-| Security-Patches (OS) | Consult | Responsible 
+| Infrastruktur 		| Konsultiert 		| Verantwortlich 
+| Docker Images 		| Verantwortlich 	| Informiert 
+| LLM-Provider Setup 	| Konsultiert 		| Verantwortlich 
+| LLM-Provider Kosten 	| Informiert 		| Rechenschaftspflichtig 
+| Datenbank 			| Konsultiert 		| Verantwortlich 
+| Backups 				| Konsultiert 		| Verantwortlich 
+| Applikations-Updates	| Verantwortlich 	| Rechenschaftspflichtig 
+| Security-Patches (OS) | Konsultiert 		| Verantwortlich 
 |===
 
 

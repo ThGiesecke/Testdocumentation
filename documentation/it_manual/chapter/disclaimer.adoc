@@ -8,7 +8,9 @@ endif::arc-assist[]
 
 ifdef::cgs-assist[]
 
-=== Ihr Partner für Künstliche Intelligenz 
+=== Kontakt
+
+*Ihr Partner für Künstliche Intelligenz*
 
 Die CGS mbH besitzt jahrzehntelange Erfahrung in der Entwicklung, Implementierung und Betreuung komplexer Softwaresysteme. 
 Mit unseren KI-Experten bieten wir Ihnen neben dem {application} auch gerne KI-Beratung und Unterstützung bei der Entwicklung oder Integration von KI-Systemen. 
