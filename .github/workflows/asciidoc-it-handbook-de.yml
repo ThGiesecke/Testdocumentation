@@ -54,7 +54,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: IT-Handbuch_DE
-          path: |
-            documentation/it_manual/IT-Handbuch_DE.pdf
-            documentation/it_manual/index.html
+          path: documentation/it_manual/IT_Handbuch_DE.pdf,documentation/it_manual/index.html
 
