@@ -1,10 +1,10 @@
 
 ifdef::cgs-assist[]
-image::../../themes/cgs-logo.png[Firmenlogo, align=left, width=60]
+image::../../themes/cgs-logo.png[Firmenlogo, align=left, width=100]
 endif::cgs-assist[]
 
 ifdef::arc-assist[]
-image::../../themes/arc_logo_gross.png[Firmenlogo, align=left, , width=100]
+image::../../themes/arc_logo_gross.png[Firmenlogo, align=left, , width=120]
 endif::arc-assist[]
 
 === Kontakt

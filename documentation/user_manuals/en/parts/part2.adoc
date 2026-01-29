@@ -1,20 +1,20 @@
 
 ifdef::cgs-assist[]
-image::../../themes/cgs-logo.png[Firmenlogo,align=left]
+image::../../themes/cgs-logo.png[Firmenlogo,align=left, width=100]
 endif::cgs-assist[]
 
 ifdef::arc-assist[]
-image::../../themes/arc_logo_gross.png[Firmenlogo,align=left]
+image::../../themes/arc_logo_gross.png[Firmenlogo,align=left, width=120]
 endif::arc-assist[]
 
 === Contact
 
 ifdef::cgs-assist[]
-Firma CGS
+Firma {author}
 
-Street 1
+Street 19999
 
-00000 Town
+99999000 Town
 
 Tel.:	
 
@@ -24,10 +24,11 @@ Web:
 endif::cgs-assist[]	
 
 ifdef::arc-assist[]
-Firma ARC
+Firma {author}
 
-Street 1
-00000 Town
+Street 1777
+
+7777700 Town
 
 Tel.:	
 

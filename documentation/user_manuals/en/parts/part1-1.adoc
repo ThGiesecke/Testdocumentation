@@ -6,16 +6,16 @@ Individual requests can be initiated here. These can be organized into chats and
 Before executing requests, it can be selected whether the document repository or the database should be searched for knowledge. Searching both at the same time is not possible.
 Requests can be made via manual text input, voice recording using a microphone, or by uploading a document.
 
-image::../images/Abbildung-38.jpg[Navigation area AI Chat inputs, title="Navigation area AI Chat inputs"]
+image::../images/Abbildung-38.jpg[Navigation area AI Chat inputs, title="Navigation area AI Chat inputs", width=400]
 
 The contents can be saved to the clipboard for further processing using a “Copy” button.
 
-image::../images/Abbildung-4.jpg[Navigation area AI Chat  - Content saving, title="Navigation area AI Chat  - Content saving"]
+image::../images/Abbildung-4.jpg[Navigation area AI Chat  - Content saving, title="Navigation area AI Chat  - Content saving", width=400]
 
 To rename a chat, the edit button (pencil) can be used.
 To delete a chat in the tree menu on the left, the delete button must first be pressed and then the deletion confirmed by clicking the checkmark.
 
-image::../images/Abbildung-5.jpg[Navigation area AI Chat - delete, title="Navigation area AI Chat - delete"]
+image::../images/Abbildung-5.jpg[Navigation area AI Chat - delete, title="Navigation area AI Chat - delete", width=300]
 
 ==== Navigation area "Use Cases" 
 
@@ -23,26 +23,26 @@ All activated use cases are displayed here, grouped by area. The assignment of u
 Use cases are lists of use cases stored and approved in the administration, which only need to be filled with specific content before execution.
 These lists facilitate routine requests.
 
-image::../images/Abbildung-6.jpg[Navigation area Uses Cases, title="Navigation area Uses Cases"]
+image::../images/Abbildung-6.jpg[Navigation area Uses Cases, title="Navigation area Uses Cases", width=400]
 
 To open a specific use case, click on the icon with the name.
 
-image::../images/Abbildung-7.jpg[Navigation area Uses Cases - select one uses case, title="Navigation area Uses Cases - select one uses case"]
+image::../images/Abbildung-7.jpg[Navigation area Uses Cases - select one uses case, title="Navigation area Uses Cases - select one uses case", width=400]
 
 Clicking on an icon with a name opens the use case for data entry.
 
-image::../images/Abbildung-8.jpg[Navigation area Uses Cases - select one uses case, title="Navigation area Uses Cases - select one uses case"]
+image::../images/Abbildung-8.jpg[Navigation area Uses Cases - select one uses case, title="Navigation area Uses Cases - select one uses case", width=400]
 
 Here, preconfigured use cases are displayed that can be filled with inputs. Afterwards, the query can be submitted by clicking "Execute".
 During processing, a wait box is displayed and the status history is shown as information.
 
-image::../images/Abbildung-9.jpg[Navigation area Uses Cases - Waitbox, title="Navigation area Uses Cases - Waitbox"]
+image::../images/Abbildung-9.jpg[Navigation area Uses Cases - Waitbox, title="Navigation area Uses Cases - Waitbox", width=400]
 
 After receiving feedback on the request, a button can be used to open the "Chat" navigation area in order to initiate further requests for this specific use case.
 The result of a request can also be saved and is then available as a separate chat.
 To delete a use case, the Delete button must first be pressed and then the action confirmed by clicking "OK".
 
-image::../images/Abbildung-11.jpg[Navigation area Uses Cases - delete single use case, title="Navigation area Uses Cases - delete single use case"]
+image::../images/Abbildung-11.jpg[Navigation area Uses Cases - delete single use case, title="Navigation area Uses Cases - delete single use case", width=400]
 
 ==== Navigation area "Automation"
 
@@ -50,34 +50,34 @@ Here, if the appropriate permission is available, all automated information sour
 The highlighted number (in red) shows the number of current results from the latest run. If a read confirmation is set by a user,
 the display of new feeds (in red) is recalculated.
 
-image::../images/Abbildung-27.jpg[Navigation area Automation, title="Navigation area Automation"]
+image::../images/Abbildung-27.jpg[Navigation area Automation, title="Navigation area Automation", width=400]
 
 To open a feed, click on the icon with the name.
 In the overview, all saved schedules are displayed. New schedules can be created here and/or existing ones deleted.
 
-image::../images/Abbildung-26.jpg[Navigation area Automation - schedules, title="Navigation area Automation - schedules"]
+image::../images/Abbildung-26.jpg[Navigation area Automation - schedules, title="Navigation area Automation - schedules" , width=150]
 
 In the execution logs area, all program runs are listed. The exact details can be viewed via a button.
 
-image::../images/Abbildung-28.jpg[Navigation area Automation - details, title="Navigation area Automation - details"]
+image::../images/Abbildung-28.jpg[Navigation area Automation - details, title="Navigation area Automation - details" , width=400]
 
 The read confirmation can be set in different ways. If a read confirmation is set by a user, the display of new feeds (in red) is recalculated.
 Blue text indicates an unread feed, black indicates a read feed. Each reader can mark an entry as read.
 Additionally, the user can use the "I have read it too " button to mark an entry already marked as "read" by someone as "read by me"
 Marking as "read" can be done in the overview or in the details dialog.
 
-image::../images/Abbildung-43.jpg[Navigation area Automation - details - details, title="Navigation area Automation - details - details"]
+image::../images/Abbildung-43.jpg[Navigation area Automation - details - details, title="Navigation area Automation - details - details", width=400]
 
 ====  Navigation area "Documents" 
 
 All available and searchable documents for which the user is authorized according to their role are displayed here.
 
-image::../images/Abbildung-12.jpg[Navigation area Documents - delete in tree, title="Navigation area Documents - delete in tree"]
+image::../images/Abbildung-12.jpg[Navigation area Documents - delete in tree, title="Navigation area Documents - delete in tree", width=400]
 
 In the tree navigation, only the folders to which the user has access rights are listed.
 The assignment of documents to the respective folders is performed in the administration section.
 
-image::../images/Abbildung-33.jpg[Navigation area Documents - tree navigation, title="Navigation area Documents - tree navigation"]
+image::../images/Abbildung-33.jpg[Navigation area Documents - tree navigation, title="Navigation area Documents - tree navigation", width=150]
 
 Documents can be downloaded via a button, and the view can be refreshed manually. Since a large number of documents may cause delays, lazy loading has been implemented.
 Therefore, individual embeddings (i.e., partial documents) can be manually loaded using the reload icon.
@@ -85,21 +85,21 @@ At the top, there are filter options to limit the number of results and sorting 
 Documents—and thus the content of the RAG—can be edited via the edit icon.
 
 |===
-|image:../images/Abbildung-34.jpg[Download File]| Download File
-|image:../images/Abbildung-35.jpg[Load Embeddings]| Load Embeddings(single load)
-|image:../images/Abbildung-36.jpg[Remove from RAG system (document remains in the folder structure)] | Remove from RAG system (document remains in the folder structure)
-|image:../images/Abbildung-37.jpg[Permanently delete document]| Permanently delete document
+|image:../images/Abbildung-34.jpg[Download File], width=30| Download File
+|image:../images/Abbildung-35.jpg[Load Embeddings], width=30| Load Embeddings(single load)
+|image:../images/Abbildung-36.jpg[Remove from RAG system (document remains in the folder structure), width=30] | Remove from RAG system (document remains in the folder structure)
+|image:../images/Abbildung-37.jpg[Permanently delete document], width=30| Permanently delete document
 |===
 
 By clicking the icon in front of the document, the partial documents can be displayed.
 
-image::../images/Abbildung-13.jpg[[Navigation area Documents - partitial dokuments show, title="[[Navigation area Documents - partitial dokuments show"]
+image::../images/Abbildung-13.jpg[[Navigation area Documents - partitial dokuments show, title="[[Navigation area Documents - partitial dokuments show", width=400]
 
 ==== Navigation area "Portal"
 
 All available links to other pages or applications for which the user is authorized according to their role are displayed here.
 
-image::../images/Abbildung-40.jpg[Navigation area - Portal, title="Navigationsbereich -area"]
+image::../images/Abbildung-40.jpg[Navigation area - Portal, title="Navigationsbereich -area", width=400]
 
 By clicking the icon, the link will be opened in a new browser tab or window, depending on the browser settings.
 

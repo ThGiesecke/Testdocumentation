@@ -97,4 +97,4 @@ image::../images/Abbildung-41.jpg[Administration - Portal-Seite, title="Administ
 
 Es können Seiten oder Applikationen verknüpft werden. Die Verknüpfung von Dokumenten auf Laufwerden oder Shares ist nicht möglich.
 
-image::../images/Abbildung-42.jpg[Administration - Portal-Seite - Link erstellen, title="Administration - Portal-Seite - Link erstellen", width=400]
+image::../images/Abbildung-42.jpg[Administration - Portal-Seite - Link erstellen, title="Administration - Portal-Seite - Link erstellen", width=250]

@@ -6,10 +6,10 @@ ifdef::arc-assist[]
 image::../../themes/arc_logo_gross.png[Logo,align=left,width=60]
 endif::arc-assist[]
 
-//= Arc Assist: User Handbook
+//= AI Audit Assist: User Handbook
 = CGS Assist: User Handbook
 :doctype: book
-//:author: arc
+//:author: AI Audit 
 :author: CGS GmbH
 :revdate: 2002-02-02
 :toc: left
@@ -24,6 +24,8 @@ endif::arc-assist[]
 :sectnumlevels: 7
 :cgs-assist: 1
 //:arc-assist: 1
+:application:CGS Assist
+//:application:AI Audit Assist
 
 include::parts/part1.adoc[]
 
