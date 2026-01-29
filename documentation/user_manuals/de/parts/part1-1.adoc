@@ -84,7 +84,6 @@ Deshalb können über das Reload Icon die einzelnen Embeddings, also Teildokumen
 Im oberen Bereich befinden sich Filter- um die Anzahl zu begrenzen und Sortierungsmöglichkeiten nach Quelle, ID und Vorschau. Die Filterresultate aktualisieren sich bereits während der Eingabe.
 Über Icon können Dokumente und somit die Inhalte des RAG bearbeitet werden werden.
 
-[cols="30%,*"]
 |===
 |image:../images/Abbildung-34.jpg[Dokument herunterladen, width=30]| Dokument herunterladen
 |image:../images/Abbildung-35.jpg[Embeddings laden, width=30]| Embeddings laden (einzeln nachladen)

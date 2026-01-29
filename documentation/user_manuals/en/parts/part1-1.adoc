@@ -84,7 +84,6 @@ Therefore, individual embeddings (i.e., partial documents) can be manually loade
 At the top, there are filter options to limit the number of results and sorting options by source, ID, and preview. The filter results update as you type.
 Documents—and thus the content of the RAG—can be edited via the edit icon.
 
-[cols="30%,*"]
 |===
 |image:../images/Abbildung-34.jpg[Download File, width=30]| Download File
 |image:../images/Abbildung-35.jpg[Load Embeddings, width=30]| Load Embeddings(single load)
