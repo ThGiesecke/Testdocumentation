@@ -56,4 +56,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Handbook_EN
-          path: documentation/user_manuals/en/
+          path: |
+            documentation/user_manuals/en/Handbuch_EN.pdf
+            documentation/user_manuals/en/index.html
+          
