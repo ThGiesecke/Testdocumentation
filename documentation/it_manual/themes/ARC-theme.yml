@@ -70,7 +70,6 @@ table:
   table-layout: auto;
   display: inline-table;
   margin: 1em 0;
-  font-size: 0.96em;
     
 chapter:
   label: ''
