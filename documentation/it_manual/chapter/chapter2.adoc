@@ -60,7 +60,7 @@ Für große Datenmengen, hohe Nutzerzahlen oder rechenintensive Aufgaben:
 
 *Proxy-Unterstützung:* Die Lösung unterstützt den Betrieb hinter einem Proxy. Proxy-Konfiguration kann in den Umgebungsvariablen hinterlegt werden.
 
-*MCP Server API:* Auf Wunsch kundenspezifische Erweiterung der Suchfunktionen für Web-, lokale Unternehmens-, Bild-, Video- und Nachrichtensuchen sowie KI gestützte Zusammenfassungen 
+*MCP Server API:* Auf Wunsch kundenspezifische Erweiterung der Suchfunktionen für Web-, lokale Kunden-, Bild-, Video- und Nachrichtensuchen sowie KI gestützte Zusammenfassungen 
 
 ifeval::[{big-output} == 1]
 include::chapter2-2-o.adoc[]

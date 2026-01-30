@@ -17,7 +17,7 @@ und stellt eine Basis zur Schulung von IT-Mitarbeitenden dar.
 
 ==== Geltungsbereich
 
-Dieses Handbuch gilt für die Applikation {application} und deren Einsatz innerhalb der IT-Infrastruktur des Unternehmens. 
+Dieses Handbuch gilt für die Applikation {application} und deren Einsatz innerhalb der IT-Infrastruktur des Kunden. 
 Es umfasst alle produktiven, Test- und Entwicklungsumgebungen, in denen die Applikation betrieben wird.
 
 Der Geltungsbereich bezieht sich auf
@@ -36,7 +36,7 @@ dem Support der Anwendung {application} betraut sind, verbindlich.
 
 ==== Zielgruppe
 
-Das vorliegende Handbuch richtet sich in erster Linie an IT-Administratoren, Systembetreuer und technische Mitarbeitende des Unternehmens, die für die Installation, Konfiguration, 
+Das vorliegende Handbuch richtet sich in erster Linie an IT-Administratoren, Systembetreuer und technische Mitarbeitende des Kunden, die für die Installation, Konfiguration, 
 den Betrieb, die Wartung und den Support der Applikation {application} erantwortlich sind.
 
 Darüber hinaus dient es als Nachschlagewerk für

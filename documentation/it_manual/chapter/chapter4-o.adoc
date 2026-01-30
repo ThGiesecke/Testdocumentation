@@ -5,55 +5,41 @@
 Starten der Anwendung:
 
 - Melden Sie sich am Server mit administrativen Rechten an.
-- Starten Sie den „Kundenmanager Pro“-Dienst über die Dienstverwaltung (Windows: Dienste.msc; Linux: systemctl start kundenmanager).
+- Starten Sie den {application}-Dienst.
 - Prüfen Sie, ob der Webserver und die Datenbankverbindung aktiv sind.
 - Testen Sie den Zugriff auf die Weboberfläche über den Browser.
 
 Beenden der Anwendung:
 
 - Informieren Sie die Benutzer über die geplante Abschaltung.
-- Fahren Sie den „Kundenmanager Pro“-Dienst geordnet herunter (Windows: Dienste.msc; Linux: systemctl stop kundenmanager).
+- Fahren Sie den {application}-Dienst geordnet herunter.
 - Beenden Sie ggf. geplante Hintergrundjobs und sichern Sie offene Datenbanktransaktionen.
 
-==== Beschreibung der Betriebsprozesse
+==== Benutzerverwaltung / Rollen 
 
-Der tägliche Betrieb umfasst folgende Standardprozesse:
+Die Benutzerverwaltung erfolgt zentral in der Administrationsoberfläche der Applikation {application}. 
 
-- Überwachung der Systemverfügbarkeit und -leistung
-- Datensicherung laut Backup-Konzept
-- Bereitstellung von Benutzer-Support bei Anfragen oder Störungen
-- Durchführung von Routineprüfungen (Logfiles, Systemressourcen)
-- Einspielung sicherheitsrelevanter Updates nach Freigabe
-
-Regelmäßige Aufgaben sind im Wartungsplan dokumentiert und werden durch das IT-Team gemäß der definierten Zeitfenster ausgeführt.
-
-==== Benutzerverwaltung / Rollen & Rechte
-
-Die Benutzerverwaltung erfolgt zentral in der Administrationsoberfläche der Applikation. Verantwortlichkeiten:
-
-- Anlegen, Bearbeiten und Löschen von Benutzerkonten
-- Zuweisen von Rollen wie „Leser“, „Bearbeiter“, „Administrator“
-- Festlegen individueller Rechte für bestimmte Funktionsbereiche (z. B. Reporting, Exporte)
+- Anlegen, Bearbeiten und Löschen von Benutzern
+- Zuweisen von Rollen wie „admin“ oder benutzerdefinierte Rollen 
+- Festlegen individueller Rechte für bestimmte Funktionsbereiche (z. B. Automatisierung)
 - Regelmäßige Überprüfung aktiver Benutzer und Rechte (mindestens halbjährlich)
-
-Das Berechtigungskonzept entspricht den organisatorischen und datenschutzrechtlichen Vorgaben.
 
 ==== Anbindung an andere Systeme (Schnittstellen, APIs)
 
 Die Anwendung ist über folgende Schnittstellen und APIs mit anderen Systemen verbunden:
 
-- REST-API zur Integration mit dem zentralen Dokumentenmanagement (Endpoint: /api/dms/v1)
-- LDAP-Anbindung für Single Sign-on und Benutzerabgleich mit dem Active Directory
-- E-Mail-Schnittstelle (SMTP/IMAP) für automatisierte Benachrichtigungen
-- Export/Import-Modul für CSV- und XLSX-basierte Datenübergabe
+- RAG-API zur Kommunikation mit dem Vector-Store
+- LLM-API zur Kommunikation mit dem vom Kunden konfigurierten LLM Provider
+- Schnittstelle mit vom Kunden konfigurierte Authentifizierung
+- (optional) MCP Server API zur Nutzung kundenspezifizierten Suchfunktionen
 
 Die Schnittstellen werden regelmäßig auf ihre Funktionsfähigkeit geprüft und dokumentierte Änderungen am API-Standard werden frühzeitig implementiert.
 
 ==== Backup und Recovery der Applikation
 
-Backup und Recovery der Applikation erfolgt durch das Unternehmen
+Backup und Recovery der Applikation erfolgt durch den Kunden
 
 ==== Überwachung/Monitoring
 
-Überwachung/Monitoring erfolgt durch das Unternehmen
+Überwachung/Monitoring erfolgt durch den Kunden
 

@@ -17,10 +17,10 @@ an ein unterstütztes LLM eingerichtet werden.
 
 ==== Lizenzinformationen
 
-Für die Nutzung von {application} wird eine Unternehmenslizenz der {author} verwendet. 
+Für die Nutzung von {application} wird eine Kundenlizenz der {author} verwendet. 
 Die Lizenz entspricht dem Modell "Concurrent User" für bis zu 50 gleichzeitige Nutzer. 
 
 Wartungs- und Update-Leistungen sind während der vertraglich vereinbarten Laufzeit enthalten. 
  
-Die Lizenzbedingungen sind im Vertrag mit dem Hersteller und in den unternehmenseigenen IT-Richtlinien hinterlegt. 
+Die Lizenzbedingungen sind im Vertrag mit dem Hersteller und in den kundeneigenen IT-Richtlinien hinterlegt. 
 Die Einhaltung der Lizenzbedingungen wird regelmäßig durch die IT-Abteilung geprüft.
