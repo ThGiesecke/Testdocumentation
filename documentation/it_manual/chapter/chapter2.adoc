@@ -100,3 +100,7 @@ Folgende Drittanbieter-Komponenten sind für den störungsfreien Betrieb erforde
 - Budget und Betriebsmodell
 
 Der Bezug und die Wartung der Drittanbieter-Komponenten liegen im Verantwortungsbereich der IT-Abteilung.
+
+ifeval::[{big-output} == 1]
+include::chapter2-3-o.adoc[]
+endif::[]

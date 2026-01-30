@@ -1,0 +1,218 @@
+==== LLM-Provider – Bereitstellung durch den Kunden 
+
+**WICHTIG:** CGS Assist stellt **kein LLM** bereit. Der Kunde muss einen der folgenden LLM-Provider selbst einrichten und betreiben.
+
+===== Übersicht der unterstützten LLM-Provider
+
+| Provider | Empfehlung | Vorteile | Setup-Aufwand |
+|----------|------------|----------|---------------|
+| **Azure OpenAI** |  **Bevorzugt** | Enterprise-Support, EU-Regionen, einfache Integration | Mittel |
+| **AWS Bedrock** |  Gleichwertig | Gute Claude-Modelle, AWS-Integration | Mittel |
+| **Lokale Modelle** |  Für hohe Datenschutzanforderungen | Maximaler Datenschutz, keine Cloud | Hoch (GPU-Hardware erforderlich) |
+
+**Wählen Sie einen Provider basierend auf:**
+
+- Vorhandener Cloud-Infrastruktur (Azure oder AWS)
+- Datenschutz- und Compliance-Anforderungen
+- Budget und Betriebsmodell
+
+===== Option A: Azure OpenAI (Empfohlen)
+
+**Warum Azure OpenAI empfohlen wird:**
+
+- Bewährte Enterprise-Integration
+- Verfügbarkeit in EU-Regionen (DSGVO-konform)
+- Microsoft Enterprise Support
+- Bewährte GPT Modelle
+
+**Voraussetzungen:**
+
+- Aktives Azure-Abonnement (Subscription)
+- Freigabe für Azure OpenAI Service (kann Genehmigung erfordern)
+- Ausreichende Berechtigungen zum Erstellen von Ressourcen
+
+==== Schritt-für-Schritt: Azure OpenAI Service aufsetzen
+
+===== Schritt 1: Azure OpenAI Ressource erstellen
+
+1. **Azure Portal öffnen:** [https://portal.azure.com](https://portal.azure.com)
+2. **Ressource erstellen:**
+   - Klicken Sie auf "+ Ressource erstellen"
+   - Suchen Sie nach "Azure OpenAI"
+   - Klicken Sie auf "Erstellen"
+3. **Konfiguration der Ressource:**
+   - **Abonnement:** Wählen Sie Ihr Azure-Abonnement
+   - **Ressourcengruppe:** Erstellen Sie eine neue oder wählen Sie eine bestehende
+   - **Region:** Wählen Sie eine Region (z. B. West Europe, North Europe)
+   - **Name:** Vergeben Sie einen eindeutigen Namen (z. B. `xxx-assist-openai-prod`)
+   - **Tarif:** Standard S0 oder höher
+4. **Überprüfen und erstellen:** Klicken Sie auf "Überprüfen + erstellen" und dann "Erstellen"
+
+===== Schritt 2: Modelle deployen in Azure AI Foundry
+
+1. **Azure AI Foundry öffnen:** [https://ai.azure.com](https://ai.azure.com)
+2. **Modell deploymen:**
+   - Navigieren Sie zu "Deployments"
+   - Klicken Sie auf "+ Create new deployment"
+3. **Empfohlene Modelle:**
+   - **Hauptmodell:** `gpt-4o` 
+   - **Optional:** `gpt-5` oder höher 
+
+===== Schritt 3: API-Credentials auslesen
+
+1. Im Azure Portal → Ihre OpenAI Ressource → "Keys and Endpoint"
+2. **Notieren Sie für die spätere Konfiguration in der Appllikation:**
+   - API Key
+   - Endpoint (z. B. `https://ihr-ressourcenname.openai.azure.com/`)
+   - Region (z. B. `westeurope`)
+   - Deployment-Namen der Modelle
+
+**Beispiel:**
+
+```
+Endpoint: https://xxx-assist-openai-prod.openai.azure.com/
+API Key: 1234567890abcdef...
+Region: westeurope
+Deployment Name: gpt-4o
+```
+
+==== Option B: AWS Bedrock (Gleichwertig unterstützt)
+
+**AWS Bedrock ist eine vollwertige Alternative zu Azure OpenAI.**
+
+**Vorteile:**
+
+- Exzellente Claude-Modelle von Anthropic
+- Verfügbarkeit in EU-Regionen (Frankfurt, Irland)
+- Gute Integration für AWS-Kunden
+- Häufig kostengünstiger als Azure OpenAI
+
+**Voraussetzungen:**
+
+- Aktives AWS-Konto
+- Zugriff auf AWS Bedrock Service
+- Ausreichende IAM-Berechtigungen
+
+==== Schritt-für-Schritt: AWS Bedrock aufsetzen
+
+===== Schritt 1: AWS Bedrock aktivieren
+
+1. **AWS Console öffnen:** [https://console.aws.amazon.com](https://console.aws.amazon.com)
+2. **Zu Bedrock navigieren:** Suchen Sie nach "Bedrock"
+3. **Region wählen:** z. B. eu-central-1 (Frankfurt), us-east-1
+4. **Model Access aktivieren:**
+   - Navigieren Sie zu "Model access"
+   - Klicken Sie auf "Manage model access"
+   - Aktivieren Sie Anthropic Claude-Modelle
+   - Klicken Sie auf "Save changes"
+
+===== Schritt 2: IAM-Berechtigungen einrichten
+
+Erstellen Sie einen IAM-User mit folgender Policy:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:InvokeModel",
+        "bedrock:InvokeModelWithResponseStream"
+      ],
+      "Resource": "arn:aws:bedrock:*::foundation-model/*"
+    }
+  ]
+}
+```
+
+===== Schritt 3: Access Keys generieren
+
+1. IAM Console → Users → Ihr User → Security credentials
+2. Create access key
+3. **Notieren Sie für die spätere Konfiguration in der Appllikation:**
+   - AWS Access Key ID
+   - AWS Secret Access Key
+   - AWS Region
+   - Model ID (z. B. `anthropic.claude-3-5-sonnet-20240620-v1:0`)
+
+**Beispiel:**
+
+```bash
+AWS Access Key ID: AKIAIOSFODNN7EXAMPLE
+AWS Secret Access Key: wJalrXUtnFEMI/K7MDENG...
+AWS Region: eu-central-1
+Model ID: anthropic.claude-3-5-sonnet-20240620-v1:0
+```
+
+==== Option C: Lokale Modelle (für höchste Datenschutzanforderungen)
+
+**Für Kunden, die keine Cloud-Anbindung wünschen.**
+
+Die Plattform unterstützt lokale LLMs über **OpenAI-kompatible APIs**.
+
+**Unterstützte Tools:**
+
+- **Ollama** (einfachste Lösung) – https://ollama.ai
+- **vLLM** (höchste Performance)
+- **LM Studio** (GUI-basiert)
+
+**Empfohlene Modelle:**
+
+- **Llama 3.1 70B / Llama 3.3 70B** (sehr gute Qualität)
+- **Qwen 2.5 72B** (exzellent, multilingual)
+- **Mistral Large 2** (hohe Qualität)
+
+**Hardware-Anforderungen:**
+
+| Modell | VRAM | GPU | RAM |
+|--------|------|-----|-----|
+| 70B Modelle | 48-80 GB | A100/H100 | 128 GB |
+| 8B Modelle | 8-16 GB | RTX 4060 Ti | 16 GB |
+
+**Setup-Beispiel mit Ollama:**
+
+```bash
+#Ollama installieren
+curl -fsSL https://ollama.ai/install.sh | sh
+#Modell herunterladen
+ollama pull llama3.1:70b
+#API läuft auf http://localhost:11434/v1 (OpenAI-kompatibel)
+```
+
+==== Token-Rate-Limits dimensionieren
+
+**Faustregeln für TPM (Tokens per Minute):**
+
+| Nutzerszenario | Empfohlenes TPM | Begründung |
+|----------------|-----------------|------------|
+| 1-5 Nutzer (Test) | 30.000 - 50.000 | Ausreichend für Tests |
+| 10-25 Nutzer | 80.000 - 120.000 | Moderate Nutzung |
+| 25-50 Nutzer | 150.000 - 250.000 | Produktivumgebung |
+| 50+ Nutzer | 300.000+ | Hohe Last |
+
+**Aufgabe des Kunden:**
+
+- **Azure OpenAI:** Token-Limits in Azure AI Foundry anpassen
+- **AWS Bedrock:** Service Quotas in AWS Console prüfen
+- **Lokale Modelle:** Ausreichende GPU-Kapazität bereitstellen
+
+==== 2.6 Kostenübersicht LLM-Provider
+
+**Azure OpenAI (ca., Stand 2026):**
+
+- GPT-4o: $5-15 pro 1M Token
+- GPT-4o-mini: $0.15-0.60 pro 1M Token
+- **Typisch (50 Nutzer): $100-500/Monat**
+
+**AWS Bedrock (ca., Stand 2026):**
+
+- Claude 3.5 Sonnet: $3-8 pro 1M Input, $15-24 pro 1M Output
+- Claude 3 Haiku: $0.25-1 pro 1M Input, $1.25-5 pro 1M Output
+- **Typisch (50 Nutzer): $80-400/Monat**
+
+**Lokale Modelle:**
+
+- Keine API-Kosten
+- Hardware-Investment: €5.000-50.000+
+- Laufende Stromkosten
