@@ -2,7 +2,8 @@
 
 Es ist innerhalb von {application},im weiteren nur noch Assist genannt, möglich, KI-unterstütztes Unternehmenswissen in separaten Chats oder vorbereiteten Anwendungsfällen abzufragen und zu nutzen. 
 Dieses Wissen basiert, je nach Einstellung, auf den Inhalten der hinterlegten Dokumente oder einer Cloud.
-Alle Chatverläufe und Use Case Verläufe werden gespeichert und können auch nach dem Browser schließen und Neuanmeldung wieder geöffnet werden.
+Alle Chatverläufe werden im Browser gespeichert und sind nach dem Browser schließen (Wenn Einstellung "automatischem Cache leeren") und Neuanmeldung nicht weiter verfügbar.
+Alle gespeicherten Use Case Verläufe können auch nach dem Browser schließen und Neuanmeldung wieder geöffnet werden.
 Bestimmte regelmäßige Anwendungsfälle werden im Assist als Templates verwaltet, um Routinen zu vereinfachen. Die Anwendungsfälle sind mit Use Cases wie eine Art Checkliste erstellt.
 Es können bei entsprechender Berechtigung, automatisierte, zeitgesteurte Abfragen auf automatisierte bereitgestellte Informationsquellen, sogenannte Feeds erstellt werden.
 

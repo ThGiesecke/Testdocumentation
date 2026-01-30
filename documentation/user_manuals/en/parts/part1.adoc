@@ -2,7 +2,8 @@
 
 It's possible in {application},in the following, only referred to as Assist, it is possible to query and utilize AI-supported company knowledge in separate chats or pre-configured use cases.
 Depending on the setting, this knowledge is based either on the contents of the stored documents or on cloud resources.
-All chat histories and use case histories are saved and can be reopened even after closing the browser and logging in again.
+All chat histories are stored in the browser and are no longer available after closing the browser (if the "automatic cache clearing" setting is enabled) and logging in again.
+All saved use case histories can be reopened even after closing the browser and logging in again.
 Certain regular use cases are managed as templates within Assist to simplify routines. The use cases are designed like a kind of checklist.
 With the appropriate permissions, automated, scheduled queries on automatically provided information sources, known as feeds, can be created.
 
