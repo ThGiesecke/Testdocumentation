@@ -2,7 +2,7 @@
 
 === IT-Architektur
 
-include::./../../it-architecture/IT_ARCHITEKTURE-DESCRIPTION.adoc[]
+include::.images/IT_ARCHITEKTURE-DESCRIPTION.adoc[]
 
 === Versionshistorie
 
