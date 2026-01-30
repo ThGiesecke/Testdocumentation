@@ -22,6 +22,9 @@ on:
         type: environment
         required: false
 
+env:
+  REVISION: 1.0.0
+  
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -49,18 +52,18 @@ jobs:
         run: |
           asciidoctor -D documentation/it_manual/ \
           -a big-output=1 \
-          -o IT-Handbuch_DE.html documentation/it_manual/index.adoc
+          -o IT-Handbuch_DE_${REVISION}.html documentation/it_manual/index.adoc
           asciidoctor-pdf -D documentation/it_manual/ \
           -a big-output=1 \
           -a pdf-theme=CGS \
           -a pdf-themesdir=documentation/it_manual/themes \
-          -o IT_Handbuch_DE.pdf documentation/it_manual/index.adoc
+          -o IT_Handbuch_DE_${REVISION}.pdf documentation/it_manual/index.adoc
 
       - name: Upload documentation artifact
         uses: actions/upload-artifact@v4
         with:
           name: IT-Handbuch_DE
           path: |
-            documentation/it_manual/IT_Handbuch_DE.pdf
-            documentation/it_manual/IT-Handbuch_DE.html
+            documentation/it_manual/IT_Handbuch_DE_*.pdf
+            documentation/it_manual/IT-Handbuch_DE_*.html
 
