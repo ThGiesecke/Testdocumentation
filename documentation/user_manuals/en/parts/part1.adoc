@@ -29,6 +29,13 @@ The user profile can also be viewed, and it is possible to change the personal p
 
 image::../images/Abbildung-3.jpg[Selecting the language and switching the view, title="Selecting the language and switching the view", width=400]
 
-Throughout the application, colored notification dialogs with status indicators are displayed in the upper left corner when creating or saving.
+Within the entire application, colored notification dialogs are displayed in the upper left corner when do actions.
+The colors indicate the notification level as follows:
+
+|===
+|green	| Successful execution of the action
+|blue	| General information about the action
+|red	| Error during execution of the action
+|===
 
 image::../images/Abbildung-confirm.jpg[Hinweise, title="Hinweise", width=400]

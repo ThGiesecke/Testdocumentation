@@ -24,8 +24,8 @@ endif::arc-assist[]
 :sectnumlevels: 7
 :cgs-assist: 1
 //:arc-assist: 1
-:application:CGS Assist
-//:application:AI Audit Assist
+:application: CGS Assist
+//:application: AI Audit Assist
 
 include::parts/part1.adoc[]
 
