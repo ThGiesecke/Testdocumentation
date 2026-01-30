@@ -1,18 +1,19 @@
-image::images/IT-Komponenten-2026-01-29.jpg[Entwurf, title="Entwurf IT-Architektur der Komponenten im Assist"]
+image::images/IT-Komponenten-2026-01-30.jpg[Entwurf, title="Entwurf IT-Architektur der Komponenten im Assist"]
 
 ==== Kunde
 Alle enthaltenen Komponenten liegen in der Verantwortlichkeit des Kunden.
 Er stellt die VM oder den Server bereit und muss Docker und Docker Compose auf dem Server installieren und konfigurieren.
 Er stellt ein Verzeichnis (SHARED_FOLDER) mit ausreichenden Schreib-/Leserechten für die Docker-Container bereit.
-Er stellt die Komponenten für die Datenhaltung (SQLite, SHARED_FOLDER, ChromaDB) bereit
 Er stellt den LLM Provider bereit.
 Er konfiguriert die Proxy-Anbindung (TLS/HTTPS)
 Er konfiguriert die notwendigen Firewall Freischaltungen
 Er konfiguriert die Anbindung an die vorhandene Authentifizierung
-Er händelt Backup und Recovery 
+Er händelt Backup und Recovery (Datenbank, SHARED_FOLDER , Konfigurationsdateien)
+
 
 ==== CGS:
-Wir stellen die Anwendung in einem Docker Image bereit. Darin enthalten und über Docker Compose installiert sind die einzelnen Container (CGS Assist Backend, LLM API, RAG API, Caddy Proxy, Redis, Celery-Worker, SQLite, ChromaDB)
+Wir stellen die Anwendung in einem Docker Image bereit. Darin enthalten und über Docker Compose 
+installiert sind die einzelnen Container (CGS Assist Backend, LLM API, RAG API, Caddy Proxy, Redis, Celery-Worker, Kundenspezifische MCP Server API)
 
 Wir liefern
 
