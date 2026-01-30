@@ -1,11 +1,12 @@
-=== Anhang
+== Anhang
 
-==== IT-Architektur
+=== IT-Architektur
 
 include::./../../it-architecture/IT_ARCHITEKTURE-DESCRIPTION.adoc[]
 
-==== Versionshistorie
+=== Versionshistorie
 
+[cols="100px,100px, 3*", options="header"]
 |===
 | Datum 		|Bearbeiter | Änderung 
 
