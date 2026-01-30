@@ -4,7 +4,7 @@
 
 Alle Änderungen an der Applikation und Infrastruktur werden im Changelog dokumentiert:
 
-include::../../../CHANGELOG.md[]
+include::./it_manual/chapter/CHANGELOG.md[]
 
 Das Änderungsprotokoll wird zentral abgelegt, in regelmäßigen Abständen aktualisiert und steht dem gesamten IT-Team zur Verfügung.
 
