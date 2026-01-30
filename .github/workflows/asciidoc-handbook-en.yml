@@ -49,14 +49,18 @@ jobs:
 
       - name: Build HTML and PDF docs
         run: |
-          asciidoctor -a revnumber=$REVISION -D documentation/user_manuals/en/ documentation/user_manuals/en/index.adoc
-          asciidoctor-pdf -a revnumber=$REVISION -D documentation/user_manuals/en/ -a pdf-theme=CGS -a pdf-themesdir=documentation/user_manuals/themes -o Handbook_EN.pdf documentation/user_manuals/en/index.adoc
+          asciidoctor -a revnumber=$REVISION \
+          -D documentation/user_manuals/en/ \
+          -o Handbook_EN_${REVISION}.html documentation/user_manuals/en/index.adocdocumentation/user_manuals/en/index.adoc
+          asciidoctor-pdf -a revnumber=$REVISION \
+          -D documentation/user_manuals/en/ -a pdf-theme=CGS -a pdf-themesdir=documentation/user_manuals/themes \
+          -o Handbook_EN_${REVISION}.pdf documentation/user_manuals/en/index.adoc
 
       - name: Upload documentation artifact
         uses: actions/upload-artifact@v4
         with:
           name: Handbook_EN
           path: |
-            documentation/user_manuals/en/Handbuch_EN.pdf
-            documentation/user_manuals/en/index.html
+            documentation/user_manuals/en/Handbuch_DE_*.pdf
+            documentation/user_manuals/en/Handbuch_DE_*.html
           
