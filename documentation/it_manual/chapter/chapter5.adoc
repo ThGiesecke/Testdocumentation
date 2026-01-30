@@ -6,7 +6,7 @@ Der Zugriff auf {application} ist durch ein mehrstufiges Berechtigungssystem sow
 
 - Anmeldung erfolgt ausschließlich über das vom Kunden gewählte und konfigurierte Anmeldeverfahren (über die lokale Benutzer-/Passwortverwaltung
 (LDAP des Kunden, DB des Kunden), über Azure AD/Entra (OIDC/SAML), über API-Token für Integrationen)
-- Passwortrichtlinien entsprechen den unternehmenseigenen IT-Sicherheitsvorgaben (Mindestlänge, Komplexität, regelmäßiger Wechsel).
+- Passwortrichtlinien entsprechen den kundeneigenen IT-Sicherheitsvorgaben (Mindestlänge, Komplexität, regelmäßiger Wechsel).
 - Der Zugriff auf sensible Daten und Administrationsfunktionen ist ausschließlich ausgewählten Benutzerrollen vorbehalten.
 - Verschlüsselung des Datenverkehrs zwischen Client und Server durch TLS 1.2 oder höher.
 

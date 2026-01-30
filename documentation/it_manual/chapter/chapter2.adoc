@@ -2,7 +2,7 @@
 
 ==== Hardwareanforderungen
 
-Für den produktiven Betrieb der Applikation {application} gelten folgende Mindestanforderungen:
+Für den produktiven Betrieb der Applikation {application} gelten folgende, lastbedingte Mindestanforderungen:
  
 ===== Entry Level (RAG, 8 GB RAM)
 

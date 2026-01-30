@@ -12,7 +12,7 @@
 
 **Empfehlung für Produktion:** Einsatz eines Reverse Proxys (z. B. Caddy, Nginx) mit TLS-Zertifikaten.
 
-**DNS-Anforderungen für Caddy mit Let's Encrypt:**
+====== DNS-Anforderungen für Caddy mit Let's Encrypt
 
 Wenn Sie Caddy mit automatischen Let's Encrypt TLS-Zertifikaten verwenden möchten:
 
@@ -28,7 +28,7 @@ xxx-assist.ihrefirma.de {
 }
 ```
 
-**Alternative DNS‑01 (öffentlich trusted, ohne Freigabe 80/443):**
+====== Alternative DNS‑01 (öffentlich trusted, ohne Freigabe 80/443)
 
 Zertifikatsanfrage wird über DNS-Einträge verifiziert anstatt die Inhalte über HTTP bereitzustellen 
 
@@ -67,7 +67,7 @@ texttest.server.de {reverse_proxy xxx_assist_server:8000 header {
 
 **Wichtig:** Die Zertifikatskette muss vollständig sein(typisch “fullchain”) und die SANs (Subject Alternative Names) müssen zum Hostnamen passen.
 
-**Alternative ohne öffentlichen DNS:**
+====== Alternative ohne öffentlichen DNS:
 
 - Verwendung eigener TLS-Zertifikate (z. B. von interner CA)
 - Zugriff nur über IP-Adresse: `http://<server-ip>:8000` (nur für Test/Entwicklung empfohlen)
