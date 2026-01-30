@@ -18,11 +18,11 @@ endif::arc-assist[]
 :toc-mode: offcanvas
 :toc-mode: responsive
 :toc-title: Inhaltsverzeichnis
-:toclevels: 3
+:toclevels: 10
 :figure-caption: Abbildung
 :imagesdir: image
 :sectnums:
-:sectnumlevels: 7
+:sectnumlevels: 10
 :cgs-assist: 1
 //:arc-assist: 1
 //:application: "AI Audit Assist"
