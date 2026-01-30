@@ -25,32 +25,29 @@ Obligatorisch für Produktion. Zertifikate:
 **Ausgehende Verbindungen:**
 
 - **Immer:** Docker Hub / CGS Registry
-- **Je nach LLM-Provider:**
-  - Azure OpenAI: `*.openai.azure.com`
-  - AWS Bedrock: `bedrock-runtime.<region>.amazonaws.com`
-  - Lokal: Interne Verbindung
+- **LLM-Provider:** Je nach Anbieter
+- **Lokale Modelle:** Interne Verbindung
 
 ===== Datenschutz
 
-**Anwendungsdaten:** Ausschließlich auf Kundenserver
+**Anwendungsdaten:** 
+- Ausschließlich auf Kundenserver
 
 **LLM-Provider (Cloud):**
 
 - Azure OpenAI / AWS Bedrock: Anfragen werden übertragen, aber nicht dauerhaft gespeichert
 - **Empfehlung:** EU-Region wählen (DSGVO)
 
-**Lokale Modelle:** Höchste DSGVO-Konformität
+**Lokale Modelle:** 
+
+- Höchste DSGVO-Konformität
 
 ==== Protokollierung und Logging
 
-Es werden umfangreiche Protokolle (Logs) zur Sicherstellung von Nachvollziehbarkeit und zum Erkennen sicherheitsrelevanter Ereignisse geführt:
+Es werden Protokolle (Logs) zur Sicherstellung von Nachvollziehbarkeit geführt:
 
-- Anmeldung, Logout, fehlgeschlagene Anmeldeversuche und Passwortänderungen werden protokolliert.
-- Änderungen an sensiblen Daten (z. B. Löschvorgänge, Rechtevergaben) werden detailliert, inkl. Zeitstempel und Benutzer, erfasst.
-- Die Logfiles werden automatisch zentral archiviert und vor unbefugtem Zugriff geschützt.
-- Logdaten werden mindestens 12 Monate aufbewahrt und regelmäßig auf Sicherheitsvorfälle ausgewertet.
-- Bei Verdacht auf einen Datenschutz- oder Sicherheitsvorfall erfolgt eine sofortige Meldung an den IT-Sicherheitsbeauftragten.
+- Die Logfiles werden automatisch zentral archiviert in der SQLite DB.
+- Logdaten werden durch den Kunden gesichert und Datenschutzkonform behandelt.
 
-Die Protokollierungs- und Löschkonzepte werden jährlich überprüft und bei Bedarf gemäß rechtlichen Vorgaben angepasst.
 
 
